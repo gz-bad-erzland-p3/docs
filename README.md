@@ -1,2 +1,2 @@
 # Readme
-[Build Status](https://github.com/gz-bad-erzland-p3/docs)
+[![license](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
