@@ -17,6 +17,6 @@ Diese Dokumentation bezieht sich auf die Profjektarbeit am BSZET 2022 der Gruppe
 3. Testumgebung starten: `mkdocs serve`
 4. Umgebung auf GitHub-Pages veröffentlichen: `mkdocs gh-deploy`
 
-### Syntax MKDocs
-[Anleitung zu Features von MKDocs](https://squidfunk.github.io/mkdocs-material/reference/)
-MKDocs verwendet normale `.md` Dateien. <br />
+### MKDocs Funktionen
+[Anleitung zu Features von MKDocs](https://squidfunk.github.io/mkdocs-material/reference/)<br />
+MKDocs verwendet normale `.md` Dateien. 
