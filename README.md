@@ -10,12 +10,12 @@ Diese Dokumentation bezieht sich auf die Profjektarbeit am BSZET 2022 der Gruppe
 1. Python und PIP sind installiert ([Anleitung PIP Installation](https://geekflare.com/de/python-pip-installation/))
 2. VS-Code o.Ä. IDE installiert
 3. GIT installiert ([Anleitung GIT Installation](https://git-scm.com/book/de/v2/Erste-Schritte-Git-installieren))
+4. MKDocs installiert (*Windows* `pip install mkdocs` | *Ubuntu* `sudo apt install mkdocs`)
 
-### Schritt-Für-Schritt Anleitung
-1. Installiere MKDOCS: *Windows* `pip install mkdocs` | *Ubuntu* `sudo apt install mkdocs`
-2. Neue Docs-Datein in den Ordner `docs` legen / schreiben (Routing erfolgt automatisch)
-3. Testumgebung starten: `mkdocs serve`
-4. Umgebung auf GitHub-Pages veröffentlichen: `mkdocs gh-deploy`
+### Wichtig
+1. Neue Docs-Datein in den Ordner `docs` legen / schreiben (Routing erfolgt automatisch)
+2. Testumgebung starten: `mkdocs serve`
+3. Umgebung auf GitHub-Pages veröffentlichen: `mkdocs gh-deploy`
 
 ### MKDocs Funktionen
 [Anleitung zu Features von MKDocs](https://squidfunk.github.io/mkdocs-material/reference/)<br />
