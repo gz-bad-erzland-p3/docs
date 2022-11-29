@@ -1,12 +1,13 @@
-# Willkommen
-## Vorwort
+# Einleeitung
 
-!!! note
+## Projektteilnehmer
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod
-    nulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor
-    massa, nec semper lorem quam in massa.
+#### Anwendungsentwicklung
+- <p>Anton Hofmann <span style={{color: "red"}}>**[Projektleiter]**</span></p>
+- Richard Peters **[Bereichsleiter]**
+- Tommy Franke
+- Alex Hartrumpf
 
-```js
-console.log("Test");
-```
+#### Systemintegration
+- Luca-Leon Sefrin **[Bereichsleiter]**
+- Max Stephan
