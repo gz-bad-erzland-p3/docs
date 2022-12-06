@@ -1,4 +1,4 @@
-# Einleeitung
+# Einleitung
 
 ## Projektteilnehmer
 
