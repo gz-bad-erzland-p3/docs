@@ -6,4 +6,4 @@ Das Lastenheft kann unter folgendem Link abgerufen werden:
 Das Gesprächsprotokoll kann unter folgendem Link abgerufen werden:
 [Protokoll_Kundengespräch.pdf](https://github.com/gz-bad-erzland-p3/docs/files/10092300/Protokoll_Kundengesprach_Unterschrieben.pdf)
 
-test
+testu
