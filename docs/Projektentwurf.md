@@ -6,3 +6,6 @@ Das Feinkonzept kann unter folgendem Link abgerufen werden:
 
 ## 2.2 Ganttplan
 ![Ganttplan](https://user-images.githubusercontent.com/72852065/212835741-f619ad39-77f2-4544-9386-869ff5b53da4.PNG)
+
+## 2.3 Netzwerkplan
+![Netzwerkübersicht](https://user-images.githubusercontent.com/72852065/212836390-8697becc-6998-4cec-8ed3-4f373caff63a.png)
