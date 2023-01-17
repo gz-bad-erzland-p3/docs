@@ -1,6 +1,4 @@
-# 1. Vorbereitung
-Bevor wir mit der Entwicklung des Online-Reservierungs-Tools beginnen konnten, mussten die Rahmenbedingungen in einem Lastenheft und die Umsetzung des Projektes mit Berücksichtigung des Lastenheftes in einem Pflichteheft erfasst und festgelegt werden.
-
+# 1. Projektdefinition
 ## 1.1 Protokoll Kundengespräch
 Unser Team hat nach Analyse des Projektauftrages ein Gespräch mit dem zuständigen Gemeindemitarbeiter Herr Gutfried gehalten. Dort wurden offene Fragen geklärt und weitere Anforderungen festgelegt. </p> 
 Das Gesprächsprotokoll kann unter folgendem Link abgerufen werden:
