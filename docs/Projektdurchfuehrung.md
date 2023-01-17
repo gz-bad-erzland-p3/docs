@@ -35,6 +35,7 @@
 ### 3.2.4 Einrichtung der Firewall
 ### 3.2.5 Einrichtung des DNS Servers
 ### 3.2.6 Erstellung des Netzwerkplans
+![Netzwerkübersicht](https://user-images.githubusercontent.com/72852065/212857433-0980954b-f5f4-4e52-86f0-db2f07fc1af8.png)
 
 ## 3.3 Projektpräsentation
 ### 3.3.1 Vorbereitung
