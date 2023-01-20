@@ -3,6 +3,9 @@
 ## 3.1 Anwendungsentwicklung
 ### 3.1.1 Landingpage
 * Frontend
+Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt.
+
+
 ### 3.1.2 Login
 * Frontend
 * Backend
