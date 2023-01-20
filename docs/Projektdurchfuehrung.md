@@ -2,16 +2,23 @@
 
 ## 3.1 Anwendungsentwicklung
 ### 3.1.1 Landingpage
-* Frontend
+* Frontend </br>
 Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt.
 
-
 ### 3.1.2 Login
-* Frontend
+* Frontend </br>
+Wir haben uns entschieden den Login nach der Konfiguration des Arbeitsplatzes abzufragen. Der Login erfolgt über die Eingabe von E-Mail und Passwort. Wenn noch kein Konto vorhanden ist, hat der Kunde die Möglichkeit sich zu registrieren. Bei dieser muss der Kunde seine Daten über Eingabefelder angeben.
+
 * Backend
+Da die Login-Daten in der Firebase-Datenbank gespeichert werden geschieht die Abfrage und Validierung der eingegebenen Daten mittels Schnittstellen. 
+
 ### 3.1.3 Buchungsformular
 * Frontend
+
+
 * Backend
+
+
 ### 3.1.4 Profilübersicht
 * Frontend
 * Backend
