@@ -13,3 +13,6 @@ In dieser Dokumentation sind alle Arbeitsschritte des Projektes protokolliert. E
 #### Systemintegration
 - Luca-Leon Sefrin **[Bereichsleiter]**
 - Max Stephan
+
+## Allgemeine Informationen
+Zur Vereinfachung der Stundenerfassung entspricht eine Stunde im Dokument einer Schulstunde (45 min).
