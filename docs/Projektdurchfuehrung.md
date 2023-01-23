@@ -9,7 +9,6 @@ Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-T
 ### 3.1.2 Login
 * Frontend </br>
 Wir haben uns entschieden den Login nach der Konfiguration des Arbeitsplatzes abzufragen. Der Login erfolgt über die Eingabe von E-Mail und Passwort. Wenn noch kein Konto vorhanden ist, hat der Kunde die Möglichkeit sich zu registrieren. Bei dieser muss der Kunde seine Daten über Eingabefelder angeben. </p>
-
 <strong>Login:</strong> </p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214049304-9c73a252-9f38-41df-b893-3d81c5c005c1.png) </p>
 <strong>Registrierung:</strong> </p>
@@ -20,7 +19,7 @@ Da die Login-Daten in der Firebase-Datenbank gespeichert werden geschieht die Ab
 
 ### 3.1.3 Buchungsformular
 * Frontend </br>
-</p>
+Insert Text here</p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png)
 
 
