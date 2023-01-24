@@ -12,21 +12,21 @@ Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-T
 * <strong>Frontend</strong> </p>
 
 <strong>Terminauswahl: </strong> </br>
-Als erstes gelangt man zur Terminauswahl. Dort kann man den Zeitraum und die Start-, bzw. Eindzeit auswählen.</p>
+Als erstes gelangt man zur Terminauswahl. Dort können der Zeitraum und die Start-, bzw. Eindzeit ausgewählt werden.</p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png) </p>
 
 <strong>Arbeitsplatzauswahl:</strong></br>
-Bei der Arbeitsplatzauswahl kann man zwischen Einzel- oder Doppelarbeitsplatz wählen. Die Auswahl begrenzt sich, wenn kein Arbeitsplatz in dem ausgewählten Zeitraum mehr zur Verfügung steht. </p>
+Bei der Arbeitsplatzauswahl kann zwischen Einzel- oder Doppelarbeitsplatz gewählt werden. Optionen, welche ausgegraut werden sind aufgrund anderer Buchungen nicht mehr auswählbar. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214238131-8b658d7c-9440-4e11-8902-e0bc2cb3db5e.png) </p>
 
 <strong>Konfiguration:</strong></br>
-In der Konfiguration muss man als erstes auswählen, ob man ein eigenes Gerät mitbringt oder ein Gerät dazumieten möchte.
+In der Konfiguration muss als erstes ausgewählt werden, ob ein eigenes Gerät mitgebracht werden soll oder nicht. Falls keins mitgebracht wird besteht die möglichkeit verschiedene Geräte zu konfigurieren.
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214238195-7e06409d-9df7-4db1-ae86-0135241227f9.png) </p>
 
-Wählt man die Option: "Ich brauche ein Gerät" aus, erweitert sich die Seite und zeigt weitere Einstellungen an. Nun kann man zwischen Laptop, Desktop-PC und Barebone entscheiden, eine Auswahl über das Betriebssystem treffen und kostenlose Browser und Kommunikationsapplikationen auswählen. Zusätzlich kann man noch  Bemerkungen und Wünsche vermerken. </p>
+Wird "Ich brauche ein Gerät" gewählt, erweitert sich die Seite und es werden weitere Konfigurationsmöglichkeiten angezeigt. Nun kann zwischen Laptop, Desktop-PC und Barebone entschieden werden, eine Auswahl über das Betriebssystem getroffen und kostenlose Browser und Kommunikationsapplikationen ausgewählt werden. Zusätzlich können noch Bemerkungen bzw. Wünsche eingetragen werden. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214238626-97ce8523-f0ab-4072-9268-28c2ba0c282a.png)
 ![edited](https://user-images.githubusercontent.com/72852065/214238361-8646f52c-9586-41d5-8a88-c2136ac99559.png) </p>
@@ -38,17 +38,17 @@ Wählt man die Option: "Ich brauche ein Gerät" aus, erweitert sich die Seite un
 * <strong>Frontend</strong> </p>
 
 <strong>Login:</strong> </br>
-Wir haben uns entschieden den Login nach der Konfiguration des Arbeitsplatzes abzufragen. Der Login erfolgt über die Eingabe von E-Mail und Passwort. </p>
+Der Login erfolgt über die Eingabe von E-Mail und Passwort. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214049304-9c73a252-9f38-41df-b893-3d81c5c005c1.png) </p>
 
 <strong>Registrierung:</strong> </br>
-Wenn noch kein Konto vorhanden ist, hat der Kunde die Möglichkeit sich zu registrieren.
+Wenn noch kein Konto vorhanden ist, besteht die Möglichkeit sich zu registrieren.
 ![grafik](https://user-images.githubusercontent.com/72852065/214049524-e6706c16-2728-41c2-8bfa-6ebdd5f9c855.png) </p>
 
 * <strong>Backend</strong> </p>
 
-Da die Login-Daten in der Firebase-Datenbank gespeichert werden geschieht die Abfrage und Validierung der eingegebenen Daten mittels Schnittstellen. </p>
+Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels HTTP- bzw- REST-Request an die REST-API (Firebase) übermittelt. Nach Abschluss der Registrierung wird eine Bestätigungsmail gesendet.</p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214237752-5b196db3-43d0-4670-8496-c3400c6bacda.png)
 
@@ -56,14 +56,21 @@ Da die Login-Daten in der Firebase-Datenbank gespeichert werden geschieht die Ab
 ### 3.1.4 Profilübersicht
 * <strong>Frontend</strong> </p>
 * <strong>Backend</strong> </p>
+
+
 ### 3.1.5 Reservierung
 * <strong>Frontend</strong> </p>
+Nach erfolgreicher Anmeldung wird der Interessent gebeten auf einen Button zu klicken. Hiermit ist der konfigurierte Arbeitsplatz für 20min reserviert und es werden die Zahlungsmethoden angezeigt.
+
 * <strong>Backend</strong> </p>
 ### 3.1.6 Dokumentation / Hilfe Seiten
 * <strong>Frontend</strong> </p>
 * <strong>Backend</strong> </p>
 ### 3.1.7 Zahlungsseite
 * <strong>Frontend</strong> </p>
+
+Auf der Zahlungsseite kann zwischen 3 Zahlungsmethoden ausgewählt werden. </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214248987-1a45aa94-9278-404d-a085-1e85b7e6f61d.png)
 * <strong>Backend</strong> </p>
 ### 3.1.8 Bestätigungsmail bei Buchungsabschluss
 * <strong>Frontend</strong> </p>
