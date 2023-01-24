@@ -8,9 +8,14 @@ Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-T
 
 ### 3.1.2 Arbeitsplatzkonfiguration
 * Frontend </br>
-Insert Text here</p>
+<strong>Terminauswahl: </strong> </br>
+Als erstes gelangt man zur Terminauswahl. Dort kann man den Zeitraum und die Start-, bzw. Eindzeit auswählen.</p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png) </p>
+
+<strong>Arbeitsplatzauswahl:</strong></br>
+Bei der Arbeitsplatzauswahl kann man zwischen Einzel- oder Doppelarbeitsplatz wählen. Die Auswahl begrenzt sich, wenn kein Arbeitsplatz in dem ausgewählten Zeitraum mehr zur Verfügung steht. </p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214238131-8b658d7c-9440-4e11-8902-e0bc2cb3db5e.png) </p>
+
 ![grafik](https://user-images.githubusercontent.com/72852065/214238195-7e06409d-9df7-4db1-ae86-0135241227f9.png) </p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214238626-97ce8523-f0ab-4072-9268-28c2ba0c282a.png)
 ![edited](https://user-images.githubusercontent.com/72852065/214238361-8646f52c-9586-41d5-8a88-c2136ac99559.png) </p>
