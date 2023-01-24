@@ -6,7 +6,19 @@
 Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt. </p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214048801-516693a6-b6cb-4e47-a470-0658e38f95d4.png)
 
-### 3.1.2 Login
+### 3.1.2 Arbeitsplatzkonfiguration
+* Frontend </br>
+Insert Text here</p>
+![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png) </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214238131-8b658d7c-9440-4e11-8902-e0bc2cb3db5e.png) </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214238195-7e06409d-9df7-4db1-ae86-0135241227f9.png) </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214238626-97ce8523-f0ab-4072-9268-28c2ba0c282a.png)
+![edited](https://user-images.githubusercontent.com/72852065/214238361-8646f52c-9586-41d5-8a88-c2136ac99559.png) </p>
+
+
+* Backend
+
+### 3.1.3 Login
 * Frontend </br>
 Wir haben uns entschieden den Login nach der Konfiguration des Arbeitsplatzes abzufragen. Der Login erfolgt über die Eingabe von E-Mail und Passwort. Wenn noch kein Konto vorhanden ist, hat der Kunde die Möglichkeit sich zu registrieren. Bei dieser muss der Kunde seine Daten über Eingabefelder angeben. </p>
 <strong>Login:</strong> </p>
@@ -16,16 +28,7 @@ Wir haben uns entschieden den Login nach der Konfiguration des Arbeitsplatzes ab
 
 * Backend </br>
 Da die Login-Daten in der Firebase-Datenbank gespeichert werden geschieht die Abfrage und Validierung der eingegebenen Daten mittels Schnittstellen. </p>
-
-### 3.1.3 Buchungsformular
-* Frontend </br>
-Insert Text here</p>
-![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png)
-
-
-
-
-* Backend
+![grafik](https://user-images.githubusercontent.com/72852065/214237752-5b196db3-43d0-4670-8496-c3400c6bacda.png)
 
 
 ### 3.1.4 Profilübersicht
