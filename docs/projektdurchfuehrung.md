@@ -2,13 +2,15 @@
 
 ## 3.1 Anwendungsentwicklung
 ### 3.1.1 Landingpage
-* Frontend </br>
+* <strong>Frontend</strong> </p>
+
 Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214048801-516693a6-b6cb-4e47-a470-0658e38f95d4.png)
 
 ### 3.1.2 Arbeitsplatzkonfiguration
-* Frontend </br>
+* <strong>Frontend</strong> </p>
+
 <strong>Terminauswahl: </strong> </br>
 Als erstes gelangt man zur Terminauswahl. Dort kann man den Zeitraum und die Start-, bzw. Eindzeit auswählen.</p>
 
@@ -30,43 +32,45 @@ Wählt man die Option: "Ich brauche ein Gerät" aus, erweitert sich die Seite un
 ![edited](https://user-images.githubusercontent.com/72852065/214238361-8646f52c-9586-41d5-8a88-c2136ac99559.png) </p>
 
 
-* Backend
+* <strong>Backend</strong> </p>
 
 ### 3.1.3 Login
-* Frontend </br>
-Wir haben uns entschieden den Login nach der Konfiguration des Arbeitsplatzes abzufragen. Der Login erfolgt über die Eingabe von E-Mail und Passwort. Wenn noch kein Konto vorhanden ist, hat der Kunde die Möglichkeit sich zu registrieren. Bei dieser muss der Kunde seine Daten über Eingabefelder angeben. </p>
-<strong>Login:</strong> </p>
+* <strong>Frontend</strong> </p>
+
+<strong>Login:</strong> </br>
+Wir haben uns entschieden den Login nach der Konfiguration des Arbeitsplatzes abzufragen. Der Login erfolgt über die Eingabe von E-Mail und Passwort. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214049304-9c73a252-9f38-41df-b893-3d81c5c005c1.png) </p>
 
-<strong>Registrierung:</strong> </p>
-
+<strong>Registrierung:</strong> </br>
+Wenn noch kein Konto vorhanden ist, hat der Kunde die Möglichkeit sich zu registrieren.
 ![grafik](https://user-images.githubusercontent.com/72852065/214049524-e6706c16-2728-41c2-8bfa-6ebdd5f9c855.png) </p>
 
-* Backend </br>
+* <strong>Backend</strong> </p>
+
 Da die Login-Daten in der Firebase-Datenbank gespeichert werden geschieht die Abfrage und Validierung der eingegebenen Daten mittels Schnittstellen. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214237752-5b196db3-43d0-4670-8496-c3400c6bacda.png)
 
 
 ### 3.1.4 Profilübersicht
-* Frontend
-* Backend
+* <strong>Frontend</strong> </p>
+* <strong>Backend</strong> </p>
 ### 3.1.5 Reservierung
-* Frontend
-* Backend
+* <strong>Frontend</strong> </p>
+* <strong>Backend</strong> </p>
 ### 3.1.6 Dokumentation / Hilfe Seiten
-* Frontend
-* Backend
+* <strong>Frontend</strong> </p>
+* <strong>Backend</strong> </p>
 ### 3.1.7 Zahlungsseite
-* Frontend
-* Backend
+* <strong>Frontend</strong> </p>
+* <strong>Backend</strong> </p>
 ### 3.1.8 Bestätigungsmail bei Buchungsabschluss
-* Frontend
-* Backend
+* <strong>Frontend</strong> </p>
+* <strong>Backend</strong> </p>
 ### 3.1.9 Programmtests
-* Frontend
-* Backend
+* <strong>Frontend</strong> </p>
+* <strong>Backend</strong> </p>
 
 ## 3.2 Systemintegration
 ### 3.2.1 Automatisierung des Webservers
