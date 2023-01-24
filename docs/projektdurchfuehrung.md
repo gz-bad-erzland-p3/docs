@@ -34,6 +34,11 @@ Wird "Ich brauche ein Gerät" gewählt, erweitert sich die Seite und es werden w
 
 * <strong>Backend</strong> </p>
 
+<strong>Terminauswahl: </strong> </br>
+In der Terminauswahl muss die Mindest- und Maximalmietdauer beachtet werden. Wird die Mietdauer über-/unterschritten wird eine Meldung oben in der Ecke angezeigt. </p>
+
+![grafik](https://user-images.githubusercontent.com/72852065/214259770-c4acab74-c43d-495c-a5e6-a47b9f81e8ec.png) </p>
+
 ### 3.1.3 Login
 * <strong>Frontend</strong> </p>
 
@@ -61,6 +66,7 @@ Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels H
 ### 3.1.5 Reservierung
 * <strong>Frontend</strong> </p>
 Nach erfolgreicher Anmeldung wird der Interessent gebeten auf einen Button zu klicken. Hiermit ist der konfigurierte Arbeitsplatz für 20min reserviert und es werden die Zahlungsmethoden angezeigt.
+
 
 * <strong>Backend</strong> </p>
 ### 3.1.6 Dokumentation / Hilfe Seiten
