@@ -16,6 +16,12 @@ markdown_extensions:
 nav:
   - Startseite:
     - index.md
+  - Projektdefinition:
+    - projektdefinition.md
+  - Projektdurchführung:
+    - projektdurchfuehrung.md
+  - Projektentwurf:
+    - projektentwurf.md
 
 plugins:
   - search
