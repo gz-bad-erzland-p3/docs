@@ -70,7 +70,10 @@ In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch 
 ### 3.1.5 Reservierung
 * <strong>Frontend</strong> </p>
 
-Nach erfolgreicher Anmeldung/Reservierung wird der Interessent gebeten auf einen Button zu klicken. Hiermit ist der konfigurierte Arbeitsplatz für 20min reserviert und es werden die Zahlungsmethoden angezeigt.
+Nach erfolgreicher Anmeldung/Reservierung wird der Interessent gebeten auf einen Button zu klicken. Hiermit ist der konfigurierte Arbeitsplatz für 20min reserviert und es werden die Zahlungsmethoden angezeigt. </p>
+
+![grafik](https://user-images.githubusercontent.com/72852065/214779369-5d4ffa31-72c1-42e4-8db4-a852c3bacd98.png) </p>
+
 
 
 * <strong>Backend</strong> </p>
