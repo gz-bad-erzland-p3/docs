@@ -22,7 +22,7 @@ Bei der Arbeitsplatzauswahl kann zwischen Einzel- oder Doppelarbeitsplatz gewäh
 ![grafik](https://user-images.githubusercontent.com/72852065/214238131-8b658d7c-9440-4e11-8902-e0bc2cb3db5e.png) </p>
 
 <strong>Konfiguration:</strong></br>
-In der Konfiguration muss als erstes ausgewählt werden, ob ein eigenes Gerät mitgebracht werden soll oder nicht. Falls keins mitgebracht wird besteht die möglichkeit verschiedene Geräte zu konfigurieren.
+In der Konfiguration muss als erstes ausgewählt werden, ob ein eigenes Gerät mitgebracht werden soll oder nicht. Falls keins mitgebracht wird besteht die möglichkeit verschiedene Geräte zu konfigurieren. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214238195-7e06409d-9df7-4db1-ae86-0135241227f9.png) </p>
 
@@ -61,8 +61,13 @@ Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels H
 ### 3.1.4 Profilübersicht
 * <strong>Frontend</strong> </p>
 
-In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch möglich das Passwort zurückzusetzen, die Adresse zu ändern oder das Konto zu löschen.
-![grafik](https://user-images.githubusercontent.com/72852065/214776870-31d778bb-c75c-4284-b5ef-e76be88cb5c5.png) </p>
+In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch möglich das Passwort zurückzusetzen, die Adresse zu ändern oder das Konto zu löschen. </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214780091-3c60adda-2667-4ac5-a95b-5f7e91779207.png) </p>
+
+<strong>Buchungsübersicht</strong> </p>
+In der Profilübersicht werden die Buchungen angezeigt und es besteht die Möglichkeit die Buchungen zu stonieren.
+![grafik](https://user-images.githubusercontent.com/72852065/214781607-3d67e685-4958-4602-b5ef-4288738b47c9.png) </p>
+
 
 * <strong>Backend</strong> </p>
 
