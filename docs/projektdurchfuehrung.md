@@ -48,7 +48,7 @@ Der Login erfolgt über die Eingabe von E-Mail und Passwort. </p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214049304-9c73a252-9f38-41df-b893-3d81c5c005c1.png) </p>
 
 <strong>Registrierung:</strong> </br>
-Wenn noch kein Konto vorhanden ist, besteht die Möglichkeit sich zu registrieren.
+Wenn noch kein Konto vorhanden ist, besteht die Möglichkeit sich zu registrieren. </p>
 ![grafik](https://user-images.githubusercontent.com/72852065/214049524-e6706c16-2728-41c2-8bfa-6ebdd5f9c855.png) </p>
 
 * <strong>Backend</strong> </p>
@@ -60,15 +60,21 @@ Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels H
 
 ### 3.1.4 Profilübersicht
 * <strong>Frontend</strong> </p>
+
+In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch möglich das Passwort zurückzusetzen, die Adresse zu ändern oder das Konto zu löschen.
+![grafik](https://user-images.githubusercontent.com/72852065/214776870-31d778bb-c75c-4284-b5ef-e76be88cb5c5.png) </p>
+
 * <strong>Backend</strong> </p>
 
 
 ### 3.1.5 Reservierung
 * <strong>Frontend</strong> </p>
-Nach erfolgreicher Anmeldung wird der Interessent gebeten auf einen Button zu klicken. Hiermit ist der konfigurierte Arbeitsplatz für 20min reserviert und es werden die Zahlungsmethoden angezeigt.
+
+Nach erfolgreicher Anmeldung/Reservierung wird der Interessent gebeten auf einen Button zu klicken. Hiermit ist der konfigurierte Arbeitsplatz für 20min reserviert und es werden die Zahlungsmethoden angezeigt.
 
 
 * <strong>Backend</strong> </p>
+
 ### 3.1.6 Dokumentation / Hilfe Seiten
 * <strong>Frontend</strong> </p>
 * <strong>Backend</strong> </p>
@@ -76,11 +82,16 @@ Nach erfolgreicher Anmeldung wird der Interessent gebeten auf einen Button zu kl
 * <strong>Frontend</strong> </p>
 
 Auf der Zahlungsseite kann zwischen 3 Zahlungsmethoden ausgewählt werden. </p>
-![grafik](https://user-images.githubusercontent.com/72852065/214248987-1a45aa94-9278-404d-a085-1e85b7e6f61d.png)
+![grafik](https://user-images.githubusercontent.com/72852065/214248987-1a45aa94-9278-404d-a085-1e85b7e6f61d.png) </p>
+
+Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezeigt. Damit ist die Reservierung abgeschlossen und der Arbeitsplatz für den gewünschten Zeitraum gebucht. </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214775635-1ef426d6-a9ed-4fd8-9093-bf22147b758b.png) </p>
+
 * <strong>Backend</strong> </p>
-### 3.1.8 Bestätigungsmail bei Buchungsabschluss
-* <strong>Frontend</strong> </p>
-* <strong>Backend</strong> </p>
+
+<strong>Bestätigungsmail bei Buchungsabschluss</strong> </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214774778-02909203-8ef8-4a3b-ae73-fff404f295fa.png) </p>
+
 ### 3.1.9 Programmtests
 * <strong>Frontend</strong> </p>
 * <strong>Backend</strong> </p>
