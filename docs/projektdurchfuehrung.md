@@ -62,7 +62,7 @@ Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels H
 * <strong>Frontend</strong> </p>
 
 In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch möglich das Passwort zurückzusetzen, die Adresse zu ändern oder das Konto zu löschen. </p>
-![grafik](https://user-images.githubusercontent.com/72852065/214780091-3c60adda-2667-4ac5-a95b-5f7e91779207.png) </p>
+![grafik](https://user-images.githubusercontent.com/72852065/214782181-fedd5236-6d55-4dd7-87ed-2f74f864b8d7.png)</p>
 
 <strong>Buchungsübersicht</strong> </p>
 In der Profilübersicht werden die Buchungen angezeigt und es besteht die Möglichkeit die Buchungen zu stonieren.
