@@ -79,13 +79,12 @@ Nach erfolgreicher Anmeldung/Reservierung wird der Interessent gebeten auf einen
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214779369-5d4ffa31-72c1-42e4-8db4-a852c3bacd98.png) </p>
 
-
-
 * <strong>Backend</strong> </p>
 
 ### 3.1.6 Dokumentation / Hilfe Seiten
-* <strong>Frontend</strong> </p>
-* <strong>Backend</strong> </p>
+* Für die Hilfe im Online-Reservierungs-Tool wird auf die Projektdokumentation verwiesen. </p>
+
+
 ### 3.1.7 Zahlungsseite
 * <strong>Frontend</strong> </p>
 
