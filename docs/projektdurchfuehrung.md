@@ -6,7 +6,7 @@
 
 Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt. </p>
 
-![grafik](https://user-images.githubusercontent.com/72852065/214048801-516693a6-b6cb-4e47-a470-0658e38f95d4.png)
+![LandingPage1](https://user-images.githubusercontent.com/72852065/215064333-7b0d153a-e669-4753-8e3d-858a1dc9a80e.png)
 
 ### 3.1.2 Arbeitsplatzkonfiguration
 * <strong>Frontend</strong> </p>
@@ -15,6 +15,13 @@ Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-T
 Als erstes gelangt man zur Terminauswahl. Dort können der Zeitraum und die Start-, bzw. Eindzeit ausgewählt werden.</p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png) </p>
+
+In der Terminauswahl muss die Mindest- und Maximalmietdauer beachtet werden. Wird die Mietdauer über-/unterschritten wird eine Meldung oben in der Ecke angezeigt. </p>
+
+![grafik](https://user-images.githubusercontent.com/72852065/214259770-c4acab74-c43d-495c-a5e6-a47b9f81e8ec.png) </p>
+
+* <strong>Problemstellungen:</strong> </p>
+
 
 <strong>Arbeitsplatzauswahl:</strong></br>
 Bei der Arbeitsplatzauswahl kann zwischen Einzel- oder Doppelarbeitsplatz gewählt werden. Optionen, welche ausgegraut werden sind aufgrund anderer Buchungen nicht mehr auswählbar. </p>
@@ -35,9 +42,7 @@ Wird "Ich brauche ein Gerät" gewählt, erweitert sich die Seite und es werden w
 * <strong>Backend</strong> </p>
 
 <strong>Terminauswahl: </strong> </br>
-In der Terminauswahl muss die Mindest- und Maximalmietdauer beachtet werden. Wird die Mietdauer über-/unterschritten wird eine Meldung oben in der Ecke angezeigt. </p>
 
-![grafik](https://user-images.githubusercontent.com/72852065/214259770-c4acab74-c43d-495c-a5e6-a47b9f81e8ec.png) </p>
 
 ### 3.1.3 Login
 * <strong>Frontend</strong> </p>
@@ -100,8 +105,7 @@ Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezei
 ![grafik](https://user-images.githubusercontent.com/72852065/214774778-02909203-8ef8-4a3b-ae73-fff404f295fa.png) </p>
 
 ### 3.1.9 Programmtests
-* <strong>Frontend</strong> </p>
-* <strong>Backend</strong> </p>
+
 
 ## 3.2 Systemintegration
 ### 3.2.1 Automatisierung des Webservers
