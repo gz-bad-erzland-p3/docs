@@ -12,16 +12,13 @@ Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-T
 * <strong>Frontend</strong> </p>
 
 <strong>Terminauswahl: </strong> </br>
-Als erstes gelangt man zur Terminauswahl. Dort können der Zeitraum und die Start-, bzw. Eindzeit ausgewählt werden.</p>
+Als erstes gelangt man zur Terminauswahl. Dort können der Zeitraum und die Start-, bzw. Endzeit ausgewählt werden.</p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png) </p>
 
 In der Terminauswahl muss die Mindest- und Maximalmietdauer beachtet werden. Wird die Mietdauer über-/unterschritten wird eine Meldung oben in der Ecke angezeigt. </p>
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214259770-c4acab74-c43d-495c-a5e6-a47b9f81e8ec.png) </p>
-
-* <strong>Problemstellungen:</strong> </p>
-
 
 <strong>Arbeitsplatzauswahl:</strong></br>
 Bei der Arbeitsplatzauswahl kann zwischen Einzel- oder Doppelarbeitsplatz gewählt werden. Optionen, welche ausgegraut werden sind aufgrund anderer Buchungen nicht mehr auswählbar. </p>
@@ -40,9 +37,6 @@ Wird "Ich brauche ein Gerät" gewählt, erweitert sich die Seite und es werden w
 
 
 * <strong>Backend</strong> </p>
-
-<strong>Terminauswahl: </strong> </br>
-
 
 ### 3.1.3 Login
 * <strong>Frontend</strong> </p>
@@ -105,6 +99,25 @@ Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezei
 ![grafik](https://user-images.githubusercontent.com/72852065/214774778-02909203-8ef8-4a3b-ae73-fff404f295fa.png) </p>
 
 ### 3.1.9 Programmtests
+
+
+
+### 3.1.10 aufgetretene Probleme/Hürden
+* Landingpage
+
+* Terminauswahl
+
+* Arbeitsplatztypauswahl
+
+* Arbeitsplatzkonfiguration
+
+* Login
+
+* Profilübersicht
+
+* Zahlungsübersicht
+
+* Backend
 
 
 ## 3.2 Systemintegration
