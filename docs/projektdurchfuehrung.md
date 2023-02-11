@@ -121,13 +121,24 @@ Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezei
 
 
 ## 3.2 Systemintegration
-### 3.2.1 Automatisierung des Webservers
-### 3.2.2 Monitoring
-### 3.2.3 Automatische Aktualisierung der Website
-### 3.2.4 Einrichtung der Firewall
-### 3.2.5 Einrichtung des DNS Servers
-### 3.2.6 Erstellung des Netzwerkplans
+### 3.2.1 Erstellung des Netzwerkplans
 ![Netzwerkübersicht](https://user-images.githubusercontent.com/72852065/212857433-0980954b-f5f4-4e52-86f0-db2f07fc1af8.png)
+
+|                    |       Netzadresse      |     Subnetzmaske    |    Gateway   | DHCP |                  Verwendung                  |
+|--------------------|:----------------------:|:-------------------:|:------------:|:----:|:--------------------------------------------:|
+| Rotes Netzwerk     | 192.168.72.0 (Class C) | 255.255.255.0 (/24) | 192.168.72.2 | Nein |              Zugang zum Internet             |
+| Orangenes Netzwerk |  192.168.1.0 (Class C) | 255.255.255.0 (/24) |  192.168.1.2 | Nein |          Demilitarisierte Zone (DMZ)         |
+| Grünes Netzwerk    |  172.15.0.0 (Class B)  |  255.255.0.0 (/16)  |  172.15.0.2  |  Ja  |    Netz für interne/administrierte Geräte    |
+| Blaues Netzwerk    |  172.16.0.0 (Class B)  |  255.255.0.0 (/16)  |  172.16.0.2  |  Ja  | Netz für externe/nicht administrierte Geräte |
+
+Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. Die Konfiguration dieser erfolgt über die "vmnetconfig"-Datei (siehe */doku/vmnetconf/vmnetconfig)
+
+### 3.2.2 Automatisierung des Webservers
+### 3.2.3 Monitoring
+### 3.2.4 Automatische Aktualisierung der Website
+### 3.2.5 Einrichtung der Firewall
+### 3.2.6 Einrichtung des DNS Servers
+
 
 ## 3.3 Projektpräsentation
 ### 3.3.1 Vorbereitung
