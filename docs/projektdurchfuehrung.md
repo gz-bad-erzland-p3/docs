@@ -218,21 +218,19 @@ Die folgende Tabelle zeigt die aktuell reservierten Adressen:
 - Kserver unterstützt kein DNSSEC &rarr; muss deaktiviert werden
 - unbound.conf zu finden unter "/etc/unbound/unbound.conf"
 - "harden-dnssec-stripped" besonders zu beachten!
-
-*
+```
         # Hardening Options
         harden-large-queries: yes
         harden-referral-path: yes
         #harden-dnssec-stripped: yes
-*
+```
 
 - DNS-Weiterleitung über die Option "forward-zone" wie folgt konfigurieren:
-
-*
+```
 forward-zone:
                 name: "."
                 forward-addr: 10.1.1.2 #add kserver as dns resolver
-*
+```
 
 ### 3.2.6 Einrichtung des DNS Servers
 
