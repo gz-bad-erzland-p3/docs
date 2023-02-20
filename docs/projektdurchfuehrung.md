@@ -135,12 +135,13 @@ Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. 
 
 <strong>Übersicht der Server</strong>
 
-| Name                  |  Netz  | Verwendung                    |
-|-----------------------|:------:|-------------------------------|
-| lnx-ipfire (siehe 2)  |   Rot  | Firewall, DHCP, DNS-forwarder |
-| lnx-dns (siehe 3)     |  Green | Interner DNS-Server           |
-| lnx-docker (siehe 4)  | Orange | Docker Host (Webserver, CA)   |
-| lnx-checkMK (siehe 5) |  Green | Monitoring des Webservers     |
+| Name                    |  Netz  | Verwendung                    |
+|-------------------------|:------:|-------------------------------|
+| lnx-ipfire (siehe 2)    |   Rot  | Firewall, DHCP, DNS-forwarder |
+| lnx-dns (siehe 3)       |  Grün  | Interner DNS-Server           |
+| lnx-docker (siehe 4)    | Orange | Docker Host (Webserver, CA)   |
+| lnx-cmk (siehe 5)       |  Grün  | Monitoring des Webservers     |
+| lnx-ansible-ctl (siehe) |  Grün  | Ansible Controle Node         |
 
 <strong>Zugangsdaten</strong>
 
@@ -164,15 +165,71 @@ Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. 
 | Betriebssystem | IP-Fire Ver. 2.27 x86_64 - Core 172                                                                                                     |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Hardware       | CPU: 2 Kerne<br>RAM: 2GB<br>Hard Disk: 20GB                                                                                             |
-| IP-Adresse(n)  | Red Interface: 192.168.72.254/24<br>Orange Interface: 192.168.1.2/24<br>Green Interface: 172.15.0.2/16<br>Blue Interface: 172.16.0.2/16 |
+| IP-Adresse(n)  | Rotes Interface: 192.168.72.254/24<br>Orangenes Interface: 192.168.1.2/24<br>Grünes Interface: 172.15.0.2/16<br>Blaues Interface: 172.16.0.2/16 |
 
 #### 3.2.5.1 Konfiguration
+##### 3.2.5.1.1 Allgemein
 
 - Installation der virtuell Maschine durch das bereitgestellte Image von IPFire
 - Einrichtung der Benuzter "admin" und "root" 
-- Zuweisung der Netzwerkadapter und deren IP-Adressen (siehe [Netzwerkübersicht])
+- Zuweisung der Netzwerkadapter und deren IP-Adressen (siehe [Netzwerkübersicht](#321-erstellung-der-netzwerkübersich))
 - weitere Konfiguration über Web-User-Interface (WUI), zu erreichen über grünen Netzwerkadapter und Port 444 (https://172.15.0.2:444)
-- SSH-Zugriff über "System" --> "SSH Access" aktivieren 
+- SSH-Zugriff über "System" &rarr; "SSH Access" aktivieren 
+
+##### 3.2.5.1.1 DHCP
+In den blauen und grünen Netzwerksegmenten ist die Firewall gleichzeitig der DHCP-Server.
+- Anpassung unter "Network" &rarr; "DHCP Server" wie folgt:
+
+|                    | Grünes Interface             | Blaues Interface             |
+|--------------------|------------------------------|------------------------------|
+| Enabled            |              yes             |              yes             |
+| Netzwerk           |         172.15.0.0/16        |         172.16.0.0/16        |
+| Start-/End-Address |  172.15.1.0 / 172.15.254.254 |  172.16.1.0 / 172.16.254.254 |
+| Min/Max Lease Time |        60min / 120min        |        60min / 120min        |
+| DNS-Server         | 172.15.254.254<br>172.15.0.2 | 172.15.254.254<br>172.16.0.2 |
+
+In beiden Netzen bleibt die Null im dritten Oktett für statische IP-Adressen frei. 
+Daher stehen sowohl die 172.15.0.1 bis 172.15.0.254 im grünen Netz und 172.16.0.1 bis 172.16.0.254 im blauen Netz für statische Adressen zur Verfügung.
+
+Als primärer DNS-server ist der lnx-dns (siehe [Einrichtung DNS-Server](#326-einrichtung-des-dns-servers)) in beiden Netzen eingetragen.
+Als sekundärer DNS-Server ist die Firewall selbst eingetragen (siehe [DNS](#32512-dns)).
+
+Die folgende Tabelle zeigt die aktuell reservierten Adressen:
+
+| Name                           | IP-Adresse     |
+|--------------------------------|----------------|
+| DNS-Server (lnx-dns)           | 172.15.254.254 |
+| CheckMK-Server (lnx-cmk)       | 172.15.254.253 |
+| Control Node (lnx-ansible-ctl) | 172.15.254.252 |
+
+##### 3.2.5.1.2 DNS
+- als interner DNS-Server wird Unbound verwendet
+- Konfiguration erfolgt über WUI oder Konfigurationsdatei
+- Firewall dient in aktueller Situation als DNS-Weiterleitung (leitet Anfragen an Kserver weiter)
+- Schema der DNS-Anfragen:
+
+![firewall-dns](https://user-images.githubusercontent.com/98982162/220060622-c034e4ec-bb82-4529-a450-eecd72a0bf7b.png)
+
+###### 3.2.5.1.2.1 Konfiguration über WUI
+- Konfiguration über "Network" &rarr; " "Domain Name System"
+- aktuell ist der Kserver über unbound.conf eingerichtet &rarr; wird **nicht** in WUI angezeigt
+
+###### 3.2.5.1.2.2 Konfiguration über unbound.conf
+- Kserver unterstützt kein DNSSEC &rarr; muss deaktiviert werden
+- unbound.conf zu finden unter "/etc/unbound/unbound.conf"
+- "harden-dnssec-stripped" besonders zu beachten!
+*
+        # Hardening Options
+        harden-large-queries: yes
+        harden-referral-path: yes
+        #harden-dnssec-stripped: yes
+*
+- DNS-Weiterleitung über die Option "forward-zone" wie folgt konfigurieren:
+
+*forward-zone:
+                name: "."
+                forward-addr: 10.1.1.2 #add kserver as dns resolver*
+
 
 ### 3.2.6 Einrichtung des DNS Servers
 
