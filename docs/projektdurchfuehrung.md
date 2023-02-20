@@ -158,11 +158,47 @@ Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. 
 
 ### 3.2.2 Automatisierung des Webservers
 ### 3.2.3 Monitoring
+#### 3.2.3.1 Systemüberblick
+
+| Version        | Open Monitoring Distribution Version 2.1.0p20.cre |
+|----------------|---------------------------------------------------|
+| Hardware       | CPU: 2 Kerne<br>RAM: 2GB<br>Hard Disk: 20GB       |
+| IP-Adresse     | 172.15.0.10                                       |
+
+#### 3.2.3.2 Installation
+Die Installation erfolge anhand der von [CheckMK](https://checkmk.com/de/download?method=cmk&edition=cre&version=2.1.0p21&platform=redhat&os=el9&type=cmk) zur Verfügung gestellten Anleitung.
+#### 3.2.3.3 Konfiguration
+- Erstellung der Site "gzbe"
+- interne Firewall angepasst:
+´´´
+[root@lnx-cmk ~]# firewall-cmd --list-all
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: ens160
+  sources:
+  services: cockpit dhcpv6-client http https ssh
+  ports: 80/tcp 443/tcp 8000/tcp
+  protocols:
+  forward: yes
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+´´´ 
+- internen Webserver den Zugriff auf Interface ens160 via SE-Linux erlauben
+´´´
+setsebool -P httpd_can_network_connect 1
+´´´
+- httpd starten und aktivieren
+- Anpassung der IPFire-Firewall (siehe [Firewall-Regeln](#325131-Firewall-Regeln))
+
 ### 3.2.4 Automatische Aktualisierung der Website
 ### 3.2.5 Firewall
 #### 3.2.5.1 Systemüberblick
 
-| Betriebssystem | IP-Fire Ver. 2.27 x86_64 - Core 172                                                                                                     |
+| Version        | IP-Fire Ver. 2.27 x86_64 - Core 172                                                                                                     |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Hardware       | CPU: 2 Kerne<br>RAM: 2GB<br>Hard Disk: 20GB                                                                                             |
 | IP-Adresse(n)  | Rotes Interface: 192.168.72.254/24<br>Orangenes Interface: 192.168.1.2/24<br>Grünes Interface: 172.15.0.2/16<br>Blaues Interface: 172.16.0.2/16 |
@@ -291,7 +327,7 @@ dns
 ### 3.2.6 Einrichtung des DNS Servers
 #### 3.2.6.1 Systemüberblick
 
-| Betriebssystem | Dnsmasq Ver. 2.85                         |
+| Version        | Dnsmasq Ver. 2.85                         |
 |----------------|-------------------------------------------|
 | Hardware       | CPU: 1 Kern<br>RAM: 1GB<br>Hard Disk: 20GB|
 | IP-Adresse     | 172.15.254.254/16                         |
