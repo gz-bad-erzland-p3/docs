@@ -121,7 +121,7 @@ Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezei
 
 
 ## 3.2 Systemintegration
-### 3.2.1 Erstellung des Netzwerkplans
+### 3.2.1 Erstellung der Netzwerkübersich
 ![Netzwerkübersicht](https://user-images.githubusercontent.com/72852065/212857433-0980954b-f5f4-4e52-86f0-db2f07fc1af8.png)
 
 |                    |       Netzadresse      |     Subnetzmaske    |    Gateway   | DHCP |                  Verwendung                  |
@@ -131,12 +131,49 @@ Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezei
 | Grünes Netzwerk    |  172.15.0.0 (Class B)  |  255.255.0.0 (/16)  |  172.15.0.2  |  Ja  |    Netz für interne/administrierte Geräte    |
 | Blaues Netzwerk    |  172.16.0.0 (Class B)  |  255.255.0.0 (/16)  |  172.16.0.2  |  Ja  | Netz für externe/nicht administrierte Geräte |
 
-Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. Die Konfiguration dieser erfolgt über die "vmnetconfig"-Datei (siehe */doku/vmnetconf/vmnetconfig)
+Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. Die Konfiguration dieses DHCPs erfolgt über die "vmnetconfig"-Datei (siehe ./doku/vmnetconf/vmnetconfig)
+
+<strong>Übersicht der Server</strong>
+
+| Name                  |  Netz  | Verwendung                    |
+|-----------------------|:------:|-------------------------------|
+| lnx-ipfire (siehe 2)  |   Rot  | Firewall, DHCP, DNS-forwarder |
+| lnx-dns (siehe 3)     |  Green | Interner DNS-Server           |
+| lnx-docker (siehe 4)  | Orange | Docker Host (Webserver, CA)   |
+| lnx-checkMK (siehe 5) |  Green | Monitoring des Webservers     |
+
+<strong>Zugangsdaten</strong>
+
+| Server          | Benutzer | Passwort |
+|-----------------|:--------:|:--------:|
+| lnx-ipfire      |   root   |   bgyb   |
+|                 |   admin  |   bgyb   |
+| lnx-dns         | secnetit |   bgyb   |
+| lnx-docker      |   admin  |   Test!  |
+| lnx-checkMK     |   root   |   bgyb   |
+|                 | cmkadmin |   bgyb   |
+| lnx-ansible-ctl |   root   | 01219dd. |
+|                 |   admin  |   bgyb   |
 
 ### 3.2.2 Automatisierung des Webservers
 ### 3.2.3 Monitoring
 ### 3.2.4 Automatische Aktualisierung der Website
-### 3.2.5 Einrichtung der Firewall
+### 3.2.5 Firewall
+#### 3.2.5.1 Systemüberblick
+
+| Betriebssystem | IP-Fire Ver. 2.27 x86_64 - Core 172                                                                                                     |
+|----------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| Hardware       | CPU: 2 Kerne<br>RAM: 2GB<br>Hard Disk: 20GB                                                                                             |
+| IP-Adresse(n)  | Red Interface: 192.168.72.254/24<br>Orange Interface: 192.168.1.2/24<br>Green Interface: 172.15.0.2/16<br>Blue Interface: 172.16.0.2/16 |
+
+#### 3.2.5.1 Konfiguration
+
+- Installation der virtuell Maschine durch das bereitgestellte Image von IPFire
+- Einrichtung der Benuzter "admin" und "root" 
+- Zuweisung der Netzwerkadapter und deren IP-Adressen (siehe [Netzwerkübersicht])
+- weitere Konfiguration über Web-User-Interface (WUI), zu erreichen über grünen Netzwerkadapter und Port 444 (https://172.15.0.2:444)
+- SSH-Zugriff über "System" --> "SSH Access" aktivieren 
+
 ### 3.2.6 Einrichtung des DNS Servers
 
 
