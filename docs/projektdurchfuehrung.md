@@ -232,7 +232,87 @@ forward-zone:
                 forward-addr: 10.1.1.2 #add kserver as dns resolver
 ```
 
+##### 3.2.5.1.2 Proxy
+- aktuell konfigurierter Proxy nur in Schulumgebung relevant
+- Anpassungen unter "Network" &rarr; "Web Proxy" zu finden 
+- Schulproxy (10.254.5.100:3128) als Upstream Proxy Server einrichten 
+
+##### 3.2.5.1.3 Firewall-Regeln
+###### 3.2.5.1.3.1 Firewall-Gruppen
+- Konfiguration unter "Firewall" &rarr; "Firewall Groups"
+- Möglichkeit, Protokolle oder Clients zu Gruppen zusammenfassen
+- folgende Servicegruppe gibt es aktuell: 
+
+check_mk-agent-group
+| Name                    | Port | Protocol |
+|-------------------------|------|----------|
+| check_mk-agent          | 6556 | TCP      |
+| check_mk-agent-register | 8000 | TCP      |
+
+dns
+| Name      | Port | Protocol |
+|-----------|------|----------|
+| DNS (TCP) | 53   | TCP      |
+| DNS (UDP) | 53   | UDP      |
+
+###### 3.2.5.1.3.1 Firewall-Regeln
+- Konfiguration unter "Firewall" &rarr; "Firewall Rules"
+
+|       Protocol       |     Source     | Log |   Destination  | Handling |                    Description                   |
+|:--------------------:|:--------------:|:---:|:--------------:|:--------:|:------------------------------------------------:|
+|         ICMP         |       Any      | [ ] |       Any      |  accept  |                    ping global                   |
+|          dns         |      BLUE      | [X] | 172.15.254.254 |  accept  |          blue pinhole for DNS #internal#         |
+|          dns         |     ORANGE     | [X] |       RED      |  accept  |           orange dns access #outgoing#           |
+|          dns         |  192.168.1.10  | [X] | 172.15.254.254 |  accept  |         allow internal dns for lnx-docker        |
+|          ssh         | 172.15.254.254 | [X] |  192.168.1.10  |  accept  | ssh access from lnx-ansible-ctl<br>to lnx-docker |
+|         snmp         |      GREEN     | [ ] |       Any      |  accept  |              snmp access to firewall             |
+|         https        |  192.168.1.10  | [ ] |       Any      |  accept  |               internal https access              |
+| check_mk-agent-group |  192.168.1.10  | [X] | 172.15.254.254 |  accept  |        access for cmk-agent from webserver       |
+
+##### 3.2.5.1.3 Zugang Blaues Netzwerk
+- Konfiguration unter "Firewall" &rarr; "Blue Access"
+- blaues Netzwerk für nicht adminsitrierte Geräte &rarr; Zugriff auf andere Netze & WUI muss eingeschränkt werden
+- Kommunikation zwischen blauem und anderen Netzen grundsätzlich blockiert 
+- rotes Netz von dieser Blockierung ausgeschlossen, wegen Internetzugang
+
+###### 3.2.5.1.3.1 MAC-Address filtering
+- standardmäßig wird MAC-Address filtering (MAf) durch IPFire aktiviert
+- blockiert Internetzugang von Clients im blauen Netzwerk
+- Netzadresse des blauen Netzes als Gerät hinzufügen
+![MAf-blue-network](https://user-images.githubusercontent.com/98982162/220071669-7d3a7cbf-bb20-431e-a8de-9ae0eaa2f00a.png)
+
+###### 3.2.5.1.3.2 WUI Zugriff
+- Zugriff vom blauen Netz auf WUI der Firewall standardmäßig freigeschalten
+- Anpassung der lokalen Firewall unter "/etc/sysconfig/firewall.local"
+- Zugriff kann wie folgt über blaues und grünes Netzwerk deaktiviert werden, wenn die Quelladresse aus dem blauen Netz kommt
+
+![wui-zugriff-von-blau](https://user-images.githubusercontent.com/98982162/220072488-30867dfb-2315-409d-9bd7-b232e28d869d.png)
+
 ### 3.2.6 Einrichtung des DNS Servers
+#### 3.2.6.1 Systemüberblick
+
+| Betriebssystem | Dnsmasq Ver. 2.85                         |
+|----------------|-------------------------------------------|
+| Hardware       | CPU: 1 Kern<br>RAM: 1GB<br>Hard Disk: 20GB|
+| IP-Adresse     | 172.15.254.254/16                         |
+
+#### 3.2.6.2 Konfiguration
+##### 3.2.6.2.1 Dnsmasq
+- Konfiguration über "/etc/dnsmasq.conf"
+- aktueller Stand wie folg:
+
+| Zeile   | Syntax                                                    | Nutzen                                                                                   |
+|---------|-----------------------------------------------------------|------------------------------------------------------------------------------------------|
+| 55-58   | no-resolv                                                 | Verhindert das dnsmasq aus der resolv.conf Datei liest                                   |
+| 64-67   | Server=172.15.0.2                                         | Hinzufügen des DNS-Servers für die Auflösung von unbekannten Adressen |
+| 112-115 | listen-address=127.0.0.1<br>listen-address=172.15.254.254 | Gibt die Interfaces vor, an denen nach DNS-Anfragen gelauscht werden soll                 |
+
+##### 3.2.6.2.2 DNS-Einträge
+- Konfiguration über "/etc/hosts"
+- aktueller Stand wie folgt:
+
+![dns-hosts](https://user-images.githubusercontent.com/98982162/220074912-e47a16c2-54e5-4733-a2b8-ef001e8b3c69.png)
+
 
 
 ## 3.3 Projektpräsentation
