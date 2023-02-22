@@ -160,6 +160,7 @@ Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. 
 Die Bereitstellung und Konfiguration des Webservers erfolgt über [Vagrant](https://www.vagrantup.com/) und [Ansible](https://www.ansible.com/).
 
 #### 3.2.2.1 Bereitstellung durch Vagrant
+Vagrant läuft mit Version 2.3.4 auf dem lokalen Windows Rechner.
 Für die Bereitstellung der VM wird im Verzeichnis das Vagrantfile benötigt.
 ```
 C:\Vagrant\lnx-docker>vagrant up --no-provision
@@ -171,7 +172,26 @@ Bei der Provisioniert wird unter anderem folgendes definiert:
 Die restlichen Punkte können aus dem Vagrantfile selbst entnommen werden.
 
 #### 3.2.2.2 Konfiguration durch Ansible
+
+| Version        | ansible core 2.13.3 |
+|----------------|---------------------------------------------------|
+| Hardware       | CPU: 2 Kerne<br>RAM: 2GB<br>Hard Disk: 20GB       |
+| IP-Adresse     | 172.15.254.252                                    |
+
 Die Konfiguration des Webservers erfolg durch den Ansible Control Node (lnx-ansible-ctl). 
+
+Der Ordner lnx-docker von Windows ist direkt über die VMware Workstation mit der VM geteilt und an /home/admin/vagrant gemountet.
+
+Außerdem sind folgende Inhalte zusätzlich in das Arebitsverzeichnis von Ansible gemappt:
+![ansible_mapped](https://user-images.githubusercontent.com/98982162/220667598-93384d6c-ecd4-4d18-942b-294a7b812fa8.png)
+
+Die Collection-Liste kann mit 
+```
+ansible-galaxy collection install name.connection
+``` 
+erweitert werden. Der aktuelle Stand ist in dieser Liste [ansible_collection.txt](https://github.com/gz-bad-erzland-p3/docs/files/10805292/ansible_collection.txt) einsehbar.
+
+
 
 ### 3.2.3 Monitoring
 #### 3.2.3.1 Systemüberblick
