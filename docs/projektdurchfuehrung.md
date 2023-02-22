@@ -170,7 +170,7 @@ Die Installation erfolge anhand der von [CheckMK](https://checkmk.com/de/downloa
 #### 3.2.3.3 Konfiguration
 - Erstellung der Site "gzbe"
 - interne Firewall angepasst:
-´´´
+```
 [root@lnx-cmk ~]# firewall-cmd --list-all
 public (active)
   target: default
@@ -186,11 +186,11 @@ public (active)
   source-ports:
   icmp-blocks:
   rich rules:
-´´´ 
+```
 - internen Webserver den Zugriff auf Interface ens160 via SE-Linux erlauben
-´´´
+```
 setsebool -P httpd_can_network_connect 1
-´´´
+```
 - Service "httpd" starten und aktivieren
 - Anpassung der IPFire-Firewall (siehe [Firewall-Regeln](#325131-Firewall-Regeln))
 
