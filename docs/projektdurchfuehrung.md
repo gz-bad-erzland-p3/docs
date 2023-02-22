@@ -162,9 +162,12 @@ Die Bereitstellung und Konfiguration des Webservers erfolgt über [Vagrant](http
 #### 3.2.2.1 Bereitstellung durch Vagrant
 Vagrant läuft mit Version 2.3.4 auf dem lokalen Windows Rechner.
 Für die Bereitstellung der VM wird im Verzeichnis das Vagrantfile benötigt.
+Die VM kann dann wie folgt gesatrtet werden:
 ```
 C:\Vagrant\lnx-docker>vagrant up --no-provision
 ```
+Dabei wird der ".vagrant"-Ordner im aktuellen Verzeichnis angelegt, in dem sich dann bspw. die VMDK-Dateien (virutelle Festplatte) der VM befinden.
+
 Bei der Provisioniert wird unter anderem folgendes definiert:
 - Name der Vagrantbox, auf der die VM gebaut wird [generic/centos9s](https://app.vagrantup.com/generic/boxes/centos9s)
 - allgemeine Festlegungen der Ressourcen (2 GB vRAM, 2 vCPUs, 128 GB Festplatte (thin provisioned))
@@ -182,16 +185,17 @@ Die Konfiguration des Webservers erfolg durch den Ansible Control Node (lnx-ansi
 
 Der Ordner lnx-docker von Windows ist direkt über die VMware Workstation mit der VM geteilt und an /home/admin/vagrant gemountet.
 
-Außerdem sind folgende Inhalte zusätzlich in das Arebitsverzeichnis von Ansible gemappt:
-![ansible_mapped](https://user-images.githubusercontent.com/98982162/220667598-93384d6c-ecd4-4d18-942b-294a7b812fa8.png)
+Außerdem sind folgende Inhalte zusätzlich in das Arbeitsverzeichnis von Ansible gemappt:
+![ansible_mapped](https://user-images.githubusercontent.com/98982162/220671954-8b499a8e-a6e1-459f-9f9b-998fc17a85b7.png "gemappte Ordner in /etc/ansible")
 
 Die Collection-Liste kann mit 
 ```
 ansible-galaxy collection install name.connection
 ``` 
-erweitert werden. Der aktuelle Stand ist in dieser Liste [ansible_collection.txt](https://github.com/gz-bad-erzland-p3/docs/files/10805292/ansible_collection.txt) einsehbar.
+erweitert werden. Der aktuelle Stand ist in dieser [Liste](https://github.com/gz-bad-erzland-p3/docs/files/10805292/ansible_collection.txt) einsehbar.
 
-
+Die vorkonfigurierte "ssh-config"-Datei im lnx-docker-Ordner wird für die SSH-Verbindung zum Host verwendet.
+Darin wird der zu verwendende Port und die Schlüssel für die Verbidnung definiert.
 
 ### 3.2.3 Monitoring
 #### 3.2.3.1 Systemüberblick
