@@ -191,8 +191,19 @@ public (active)
 ´´´
 setsebool -P httpd_can_network_connect 1
 ´´´
-- httpd starten und aktivieren
+- Service "httpd" starten und aktivieren
 - Anpassung der IPFire-Firewall (siehe [Firewall-Regeln](#325131-Firewall-Regeln))
+
+#### 3.2.3.4 Agentinstallation
+Die Überwachung von Servern läuft über einen mitgelieferten Agent, welcher auch auf dem CheckMK-Server selbst installiert wurde.
+Es gibt zwei Möglichkeiten, den Agent zu finden:
+
+- lokal: /opt/omd/versions/2.1.0p20.cre/share/check_mk/agents/
+- über die Webansicht: http://172.15.254.253/gzbe/check_mk/agents/ 
+
+Eine konkrete Anleitung für die Agentinstallation und Registrierung wird auch von [CheckMK](https://docs.checkmk.com/latest/de/agent_deployment.html) zur Verfügung gestellt.
+
+Die benötigten Ports zur Kommunikation sind in der [Firewall](#32513-firewall-regeln) in der "check_mk-agent-group"-Gruppe konfiguriert.
 
 ### 3.2.4 Automatische Aktualisierung der Website
 ### 3.2.5 Firewall
