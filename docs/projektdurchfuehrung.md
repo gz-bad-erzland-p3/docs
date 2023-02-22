@@ -157,6 +157,22 @@ Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. 
 |                 |   admin  |   bgyb   |
 
 ### 3.2.2 Automatisierung des Webservers
+Die Bereitstellung und Konfiguration des Webservers erfolgt über [Vagrant](https://www.vagrantup.com/) und [Ansible](https://www.ansible.com/).
+
+#### 3.2.2.1 Bereitstellung durch Vagrant
+Für die Bereitstellung der VM wird im Verzeichnis das Vagrantfile benötigt.
+```
+C:\Vagrant\lnx-docker>vagrant up --no-provision
+```
+Bei der Provisioniert wird unter anderem folgendes definiert:
+- Name der Vagrantbox, auf der die VM gebaut wird [generic/centos9s](https://app.vagrantup.com/generic/boxes/centos9s)
+- allgemeine Festlegungen der Ressourcen (2 GB vRAM, 2 vCPUs, 128 GB Festplatte (thin provisioned))
+- Netzwerkadapter mit MAC-Adresse und virtuellem Netzwerk
+Die restlichen Punkte können aus dem Vagrantfile selbst entnommen werden.
+
+#### 3.2.2.2 Konfiguration durch Ansible
+Die Konfiguration des Webservers erfolg durch den Ansible Control Node (lnx-ansible-ctl). 
+
 ### 3.2.3 Monitoring
 #### 3.2.3.1 Systemüberblick
 
@@ -206,6 +222,9 @@ Eine konkrete Anleitung für die Agentinstallation und Registrierung wird auch v
 Die benötigten Ports zur Kommunikation sind in der [Firewall](#32513-firewall-regeln) in der "check_mk-agent-group"-Gruppe konfiguriert.
 
 ### 3.2.4 Automatische Aktualisierung der Website
+
+
+
 ### 3.2.5 Firewall
 #### 3.2.5.1 Systemüberblick
 
