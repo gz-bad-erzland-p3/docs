@@ -122,7 +122,8 @@ Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezei
 
 ## 3.2 Systemintegration
 ### 3.2.1 Erstellung der Netzwerkübersich
-![Netzwerkübersicht](https://user-images.githubusercontent.com/72852065/212857433-0980954b-f5f4-4e52-86f0-db2f07fc1af8.png)
+![Netzwerkübersicht drawio](https://user-images.githubusercontent.com/98982162/220851687-25a2a5a9-d464-47c8-852d-fc5f98ef8a8c.png)
+
 
 |                    |       Netzadresse      |     Subnetzmaske    |    Gateway   | DHCP |                  Verwendung                  |
 |--------------------|:----------------------:|:-------------------:|:------------:|:----:|:--------------------------------------------:|
@@ -188,14 +189,24 @@ Der Ordner lnx-docker von Windows ist direkt über die VMware Workstation mit de
 Außerdem sind folgende Inhalte zusätzlich in das Arbeitsverzeichnis von Ansible gemappt:
 ![ansible_mapped](https://user-images.githubusercontent.com/98982162/220671954-8b499a8e-a6e1-459f-9f9b-998fc17a85b7.png "gemappte Ordner in /etc/ansible")
 
+Die vorkonfigurierte "ssh-config"-Datei im lnx-docker-Ordner wird für die SSH-Verbindung zum Host verwendet.
+In dieser wird unter anderem der zu verwendende Port und die Schlüssel für die Verbindung definiert.
+
+##### 3.2.2.2.1 Collection
 Die Collection-Liste kann mit 
 ```
 ansible-galaxy collection install name.connection
 ``` 
 erweitert werden. Der aktuelle Stand ist in dieser [Liste](https://github.com/gz-bad-erzland-p3/docs/files/10805292/ansible_collection.txt) einsehbar.
 
-Die vorkonfigurierte "ssh-config"-Datei im lnx-docker-Ordner wird für die SSH-Verbindung zum Host verwendet.
-Darin wird der zu verwendende Port und die Schlüssel für die Verbidnung definiert.
+##### 3.2.2.2.2 Playbooks
+Im Ordner .playbooks im Arbeitsverzeichnis sind alle relevanten Dateien zu finden.
+
+Die Konfigurationsdatei "ansible.cfg" bilden dabei den Grundstock für die Nutzung von Ansible.
+
+Die "hosts"-Datei enthält die Managed Nodes, welche mittels dem Control Node konfiguriert werden. Diese können in Gruppen und die einzelnen Hosts aufgeteilt werden.
+
+Die "resolve"-Datei kann als interner DNS verstanden werden, der zusätzlich zum DNS im Netzwerk lokal Adressen auflösen kann.
 
 ### 3.2.3 Monitoring
 #### 3.2.3.1 Systemüberblick
