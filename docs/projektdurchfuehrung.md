@@ -208,6 +208,27 @@ Die "hosts"-Datei enthält die Managed Nodes, welche mittels dem Control Node ko
 
 Die "resolve"-Datei kann als interner DNS verstanden werden, der zusätzlich zum DNS im Netzwerk lokal Adressen auflösen kann.
 
+Die "site.yml"-Datei ist das Playbook, in dem die Konfiguration des Webservers definiert ist.
+Das Playbook kann von dem Control Node aus, aus richtigen Ordner wie folgt ausgeführt werden:
+```
+[admin@lnx-ansible-ctl lnx-docker]$ ansible-playbook --vault-password-file=vault_pass playbooks/site.yml
+```
+Die Datei, die das Passwort zum Vault enthält, muss seperat behandelt werden, damit die Sicherheit gewährleistet sein kann.
+
+In dem Hauptplaybook wird im Teil der "pre_task", nach einer Abfrage des aktuellen Nutzers, der Standardnutzer, der durch Vagrant mitgelieft wird, auf einen eigenen Nutzer geändert.
+Im Hauptteil werden dann allgemeine Einstellungen gesetzt und andere Playbooks importiert. 
+In den "post_tasks" werden alle nicht benutzten Container und der mitgelieferte Standardnutzer von Vagrant entfernt.
+
+Für genauere Informationen zu den verschiedenen Playbooks empfielt es sich, diese selbst zu analysieren.
+
+Im Ordner group_vars, im Hauptverzeichnis, befinden sich im Ordner "all" die yaml-Dateien "centOS.yml" und "vault.yml".
+In der centOS-Datei sind alle benötigten Variablen für das Playbook definiert.
+Die vault-Datei ist direkt über das von Ansible mitgelieferte Tool "Ansible Vault" mit AES256 verschlüsselt. Diese Datei kann nur im Control Node auf der Kommandozeile bearbeitet werden. Eine genauere Anleitung kann [hier](https://www.digitalocean.com/community/tutorials/how-to-use-vault-to-protect-sensitive-ansible-data) gefunden werden.
+
+Der Ordner "files" bietet einen zentralen Ort, an dem alle Dateien zu finden sind, die während der Konfiguration des Managed Nodes auf diesen übrtragen werden.
+
+Im Ordner "units" befinden sich weitere Playbooks, die, wie weiter oben beschrieben, im Hauptplaybook inkludiert werden.
+
 ### 3.2.3 Monitoring
 #### 3.2.3.1 Systemüberblick
 
