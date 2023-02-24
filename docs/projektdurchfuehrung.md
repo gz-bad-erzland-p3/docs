@@ -229,6 +229,41 @@ Der Ordner "files" bietet einen zentralen Ort, an dem alle Dateien zu finden sin
 
 Im Ordner "units" befinden sich weitere Playbooks, die, wie weiter oben beschrieben, im Hauptplaybook inkludiert werden.
 
+**check-git-service.yml**
+- Skript zur automatischen Aktualisierung der Webseite wird bereitgestellt
+- systemd.timer wird konfiguriert
+- mehr Informationen: siehe #324-automatische-aktualisierung-der-website
+
+**firewalld.yml**
+- Firewalld wird angepasst
+  - Ports und Services werden freigeschalten 
+
+**install-podman.yml**
+- Podman wird installiert
+
+**install-repository.yml**
+- Repositorys werden installiert
+
+**install-req-packages.yml**
+- benötigte Pakete werden installiert
+
+**remove-nextjs-systemd.yml**
+- systemd container-nextjs-instance wird entfernt
+
+**setup-cmk-agent.yml**
+- CheckMK Agent wird vom Server heruntergeladen und anschließend installiert
+- Registrierung am Server erfolgt
+
+**setup-nextjs.yml**
+- Podman Container mit Webseite wird aufgesetzt
+- Image wird durch [Dockerfile](https://github.com/gz-bad-erzland-p3/projektarbeit/blob/main/Dockerfile) definiert
+- systemd-Service wird generiert 
+
+**setup-nextjs-service.yml**
+- generierter Container Service wird aktiviert
+
+
+
 ### 3.2.3 Monitoring
 #### 3.2.3.1 Systemüberblick
 
