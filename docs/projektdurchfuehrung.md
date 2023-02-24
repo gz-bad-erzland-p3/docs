@@ -255,14 +255,42 @@ Im Ordner "units" befinden sich weitere Playbooks, die, wie weiter oben beschrie
 - Registrierung am Server erfolgt
 
 **setup-nextjs.yml**
-- Podman Container mit Webseite wird aufgesetzt
+- Podman Container mit Webseite wird im Usercontext gestartet 
 - Image wird durch [Dockerfile](https://github.com/gz-bad-erzland-p3/projektarbeit/blob/main/Dockerfile) definiert
 - systemd-Service wird generiert 
 
 **setup-nextjs-service.yml**
 - generierter Container Service wird aktiviert
 
+**setup-nginx.yml**
+- Podman Container mit Nginx wird im Usercontext gestartet
+- benötigte Zertifikatsdatei werden kopiert
+- systemd-Service wird generiert
 
+**setup-nginx-service.yml**
+- generierter Container Service wird aktiviert
+
+**setup-pod.yml**
+- der Pod "service_pod" wird entfernt und neu generiert
+- hier werden auch die benötigten Ports exposed
+
+**setup-proxy.yml**
+- mittels ICMP-Ping wird geprüft, ob der Schulproxy erreichbar ist
+- sollte dieser Erreichbar sein, wird auf dem Control Node der Proxy eingerichtet
+
+**setup-ssl-cert.yml**
+- die Zertifikate für die Webseite wird über einen Container erstellt
+- Podman Container zur Zertifikatserstellung wird mit allen benötigten Parametern für das Zertifikat ausgestellt
+
+**setup-user.yml**
+- Nutzer wird erstellt und in "admin"- und "wheel"-Gruppen aufgenommen
+- die Zertifikate zur Anmeldung über SSH werden verschoben
+
+Die hier dargestellte Reihenfolge der Playbooks ist so nicht im Hauptplaybook inkludiert. Die tatsächliche Reihenfolge ist aus dem Playbook "site.yml" zu entnehmen.
+
+Sowohl der Nginx-, als auch der Nextjs-Container laufen im "service_pod"-Pod. Durch diesen werden die Ports 3000 und 8443 exposed.
+Der Port 8443 wird vom Nginx-Container verwendet, um die Webseite nach außen über einen verschlüsselten TSL-Verbindung bereitzustellen.
+Der Port 3000 wird vom verwendet, damit der Nginx-Container mit dem Nextjs-Container kommunizieren kann. Diese Kommunikation läuft unverschlüsselt innerhalb des Pods. Der Nginx-Container dient dabei als Upstream Server.
 
 ### 3.2.3 Monitoring
 #### 3.2.3.1 Systemüberblick
@@ -313,7 +341,16 @@ Eine konkrete Anleitung für die Agentinstallation und Registrierung wird auch v
 Die benötigten Ports zur Kommunikation sind in der [Firewall](#32513-firewall-regeln) in der "check_mk-agent-group"-Gruppe konfiguriert.
 
 ### 3.2.4 Automatische Aktualisierung der Website
+Die Aktualisierung der Webseite erfolg über ein Skript, welches durch einen Service ausgeführt wird. Dieser Service wird durch einen Timer verwaltet.
 
+Die Funktionsweise ist wie folgt:
+- jeden Tag 0 Uhr werden die CommitIDs der Onlineversion und der lokalen Version verglichen
+![timer](https://user-images.githubusercontent.com/98982162/221189637-4340ef00-7947-42f9-b533-18a8009ffac2.png)
+- sind diese ungleich wird die Version von Github heruntergeladen und damit ein Textimage gebaut
+- wenn der Container fehlerfrei gebaut werden konnte, wird er wieder entfernt
+- anschließend wird die aktuelle Webseite über den Dienst gestoppt
+- die Images werden umgetagget bzw. entfernt
+- der neue Container wird mit seinem Dienst neu erstellt
 
 
 ### 3.2.5 Firewall
