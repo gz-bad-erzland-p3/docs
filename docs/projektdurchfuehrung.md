@@ -497,7 +497,7 @@ dns
 
 | Zeile   | Syntax                                                    | Nutzen                                                                                   |
 |---------|-----------------------------------------------------------|------------------------------------------------------------------------------------------|
-| 55-58   | no-resolv                                                 | Verhindert das dnsmasq aus der resolv.conf Datei liest                                   |
+| 55-58   | no-resolv                                                 | Verhindert, dass dnsmasq aus der resolv.conf Datei liest                                   |
 | 64-67   | Server=172.15.0.2                                         | Hinzufügen des DNS-Servers für die Auflösung von unbekannten Adressen |
 | 112-115 | listen-address=127.0.0.1<br>listen-address=172.15.254.254 | Gibt die Interfaces vor, an denen nach DNS-Anfragen gelauscht werden soll                 |
 
