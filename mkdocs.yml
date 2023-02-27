@@ -17,9 +17,23 @@ nav:
   - Startseite:
     - index.md
   - Projektdefinition:
-    - projektdefinition.md
+    - Protokoll: projektdefinition/protokoll.md
+    - Lastenheft: projektdefinition/lastenheft.md
+    - Pflichtenheft: projektdefinition/pflichtenheft.md
   - Projektdurchführung:
-    - projektdurchfuehrung.md
+    - Anwendungsentwicklung:
+      - projektdurchführung/anwendungsentwicklung/index.md
+      - Frontend: projektdurchführung/anwendungsentwicklung/frontend.md
+      - Backend: projektdurchführung/anwendungsentwicklung/backend.md
+      - Probleme: projektdurchführung/anwendungsentwicklung/probleme.md
+    - Systemintegration: 
+      - projektdurchführung/systemintegration/index.md
+      - Netzwerk: projektdurchführung/systemintegration/netzwerk.md
+      - Webserver: projektdurchführung/systemintegration/webserver.md
+      - Monitoring: projektdurchführung/systemintegration/monitoring.md
+      - Automatisierung Website: projektdurchführung/systemintegration/automatisierung.md
+      - Firewall: projektdurchführung/systemintegration/firewall.md
+      - DNS: projektdurchführung/systemintegration/dns.md
   - Projektentwurf:
     - projektentwurf.md
 
@@ -38,7 +52,6 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
-    - navigation.sections
     - navigation.expand
     - toc.follow
     - navigation.indexes
