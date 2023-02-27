@@ -138,11 +138,11 @@ Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. 
 
 | Name                    |  Netz  | Verwendung                    |
 |-------------------------|:------:|-------------------------------|
-| lnx-ipfire (siehe 2)    |   Rot  | Firewall, DHCP, DNS-forwarder |
-| lnx-dns (siehe 3)       |  Grün  | Interner DNS-Server           |
-| lnx-docker (siehe 4)    | Orange | Docker Host (Webserver, CA)   |
-| lnx-cmk (siehe 5)       |  Grün  | Monitoring des Webservers     |
-| lnx-ansible-ctl (siehe) |  Grün  | Ansible Controle Node         |
+| lnx-ipfire    |   Rot  | Firewall, DHCP, DNS-forwarder |
+| lnx-dns       |  Grün  | Interner DNS-Server           |
+| lnx-docker     | Orange | Docker Host (Webserver, CA)   |
+| lnx-cmk      |  Grün  | Monitoring des Webservers     |
+| lnx-ansible-ctl |  Grün  | Ansible Controle Node         |
 
 <strong>Zugangsdaten</strong>
 
@@ -416,7 +416,7 @@ Die folgende Tabelle zeigt die aktuell reservierten Adressen:
         # Hardening Options
         harden-large-queries: yes
         harden-referral-path: yes
-        #harden-dnssec-stripped: yes
+        harden-dnssec-stripped: no
 ```
 
 - DNS-Weiterleitung über die Option "forward-zone" wie folgt konfigurieren:
