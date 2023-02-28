@@ -1,7 +1,4 @@
-# Einleitung
-
-## Vorwort
-In dieser Dokumentation sind alle Arbeitsschritte des Projektes protokolliert. Ebenso sind hier alle wichtigen Dokumente abgelegt, die während des Projektes erstellt wurden.
+# Überblick
 
 ## Projektteilnehmer
 #### Anwendungsentwicklung
