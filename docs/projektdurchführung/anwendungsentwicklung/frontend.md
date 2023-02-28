@@ -10,7 +10,7 @@ Das Frontend der Projektarbeit bezieht sich auf alle Benutzeroberflächen der An
 
 Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt. </p>
 
-![LandingPage1](https://user-images.githubusercontent.com/72852065/215064333-7b0d153a-e669-4753-8e3d-858a1dc9a80e.png)
+![grafik](https://user-images.githubusercontent.com/72852065/221809334-0a52dd26-36a9-4bdb-b3f8-db82b9ada757.png)
 
 ## Buchungsseite
 ### Wizard
