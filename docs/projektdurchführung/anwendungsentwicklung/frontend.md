@@ -2,6 +2,10 @@
 
 Das Frontend der Projektarbeit bezieht sich auf alle Benutzeroberflächen der Anwendung sowie der grafischen Gestaltung der Startseite (zu engl. Landingpage) 
 
+!!! info "Projektcode"
+
+    Der gesamte Projektcode steht Open-Source auf [GitHub](https://github.com/gz-bad-erzland-p3/projektarbeit) zu verfügung 
+
 ## Landingpage
 
 Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt. </p>

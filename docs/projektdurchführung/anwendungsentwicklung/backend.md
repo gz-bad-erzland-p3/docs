@@ -2,10 +2,7 @@
 
 ## Datenbank
 
-Als Datenbanklösung wird die Echtzeitdatenbank von Firebase verwendet.
-
-[Firebase](https://www.firebase.com)
-
+Als Datenbanklösung wird die Echtzeitdatenbank von [Firebase](https://www.firebase.com) verwendet.
 
 ### Übersicht
 
@@ -29,9 +26,8 @@ Alles in allem bietet Firebase eine leistungsstarke und elegante Authentifizieru
 
 ## Versenden von Emails
 ### Übersicht
-EmailJS ist ein Service, der es Entwicklern ermöglicht, E-Mails über ihre eigenen Frontend-Webanwendungen zu senden, ohne dass ein Backend-Server erforderlich ist. Es erleichtert die Integration von E-Mail-Versand in Webanwendungen, indem es eine API bereitstellt, die es Entwicklern ermöglicht, E-Mails zu senden, ohne dass sie sich um den Aufbau und die Verwaltung eines eigenen E-Mail-Servers kümmern müssen.
 
-[EmailJS](https://www.emailjs.com)
+[EmailJS](https://www.emailjs.com) ist ein Service, der es Entwicklern ermöglicht, E-Mails über ihre eigenen Frontend-Webanwendungen zu senden, ohne dass ein Backend-Server erforderlich ist. Es erleichtert die Integration von E-Mail-Versand in Webanwendungen, indem es eine API bereitstellt, die es Entwicklern ermöglicht, E-Mails zu senden, ohne dass sie sich um den Aufbau und die Verwaltung eines eigenen E-Mail-Servers kümmern müssen.
 
 ### Bestätigungsmail bei Buchungsabschluss
 ![grafik](https://user-images.githubusercontent.com/72852065/214774778-02909203-8ef8-4a3b-ae73-fff404f295fa.png)

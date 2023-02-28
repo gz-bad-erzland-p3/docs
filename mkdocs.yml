@@ -16,9 +16,12 @@ markdown_extensions:
 nav:
   - Überblick:
     - index.md
+    - Projektteilnehmer: ueberblick/projektteilnehmer.md
+    - Informationen: ueberblick/informationen.md
   - Anleitungen & Informationen:
     - anleitungen/index.md
   - Projektphasen:
+    - projektphasen.md
     - Projektdefinition:
       - Protokoll: projektdefinition/protokoll.md
       - Lastenheft: projektdefinition/lastenheft.md
@@ -61,6 +64,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.expand
     - toc.follow
     - navigation.indexes
@@ -89,3 +93,47 @@ theme:
 
 extra_css:
   - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.superfences
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - md_in_html
