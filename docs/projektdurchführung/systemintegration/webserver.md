@@ -4,11 +4,11 @@ Die Bereitstellung und Konfiguration des Webservers erfolgt über [Vagrant](http
 #### 3.2.2.1 Bereitstellung durch Vagrant
 Vagrant läuft mit Version 2.3.4 auf dem lokalen Windows Rechner.
 Für die Bereitstellung der VM wird im Verzeichnis das Vagrantfile benötigt.
-Die VM kann dann wie folgt gesatrtet werden:
+Die VM kann dann wie folgt gestartet werden:
 ```
 C:\Vagrant\lnx-docker>vagrant up --no-provision
 ```
-Dabei wird der ".vagrant"-Ordner im aktuellen Verzeichnis angelegt, in dem sich dann bspw. die VMDK-Dateien (virutelle Festplatte) der VM befinden.
+Dabei wird der ".vagrant"-Ordner im aktuellen Verzeichnis angelegt, in dem sich dann bspw. die VMDK-Dateien (virtuelle Festplatte) der VM befinden.
 
 Bei der Provisioniert wird unter anderem folgendes definiert:
 - Name der Vagrantbox, auf der die VM gebaut wird [generic/centos9s](https://app.vagrantup.com/generic/boxes/centos9s)
@@ -23,7 +23,7 @@ Die restlichen Punkte können aus dem Vagrantfile selbst entnommen werden.
 | Hardware       | CPU: 2 Kerne<br>RAM: 2GB<br>Hard Disk: 20GB       |
 | IP-Adresse     | 172.15.254.252                                    |
 
-Die Konfiguration des Webservers erfolg durch den Ansible Control Node (lnx-ansible-ctl). 
+Die Konfiguration des Webservers rfolgt durch den Ansible Control Node (lnx-ansible-ctl). 
 
 Der Ordner lnx-docker von Windows ist direkt über die VMware Workstation mit der VM geteilt und an /home/admin/vagrant gemountet.
 
@@ -54,19 +54,19 @@ Das Playbook kann von dem Control Node aus, aus richtigen Ordner wie folgt ausge
 ```
 [admin@lnx-ansible-ctl lnx-docker]$ ansible-playbook --vault-password-file=vault_pass playbooks/site.yml
 ```
-Die Datei, die das Passwort zum Vault enthält, muss seperat behandelt werden, damit die Sicherheit gewährleistet sein kann.
+Die Datei, die das Passwort zum Vault enthält, muss separat behandelt werden, damit die Sicherheit gewährleistet sein kann.
 
-In dem Hauptplaybook wird im Teil der "pre_task", nach einer Abfrage des aktuellen Nutzers, der Standardnutzer, der durch Vagrant mitgelieft wird, auf einen eigenen Nutzer geändert.
+In dem Hauptplaybook wird im Teil der "pre_task", nach einer Abfrage des aktuellen Nutzers, der Standardnutzer, der durch Vagrant mitgeliefert wird, auf einen eigenen Nutzer geändert.
 Im Hauptteil werden dann allgemeine Einstellungen gesetzt und andere Playbooks importiert. 
 In den "post_tasks" werden alle nicht benutzten Container und der mitgelieferte Standardnutzer von Vagrant entfernt.
 
-Für genauere Informationen zu den verschiedenen Playbooks empfielt es sich, diese selbst zu analysieren.
+Für genauere Informationen zu den verschiedenen Playbooks empfiehlt es sich, diese selbst zu analysieren.
 
 Im Ordner group_vars, im Hauptverzeichnis, befinden sich im Ordner "all" die yaml-Dateien "centOS.yml" und "vault.yml".
 In der centOS-Datei sind alle benötigten Variablen für das Playbook definiert.
 Die vault-Datei ist direkt über das von Ansible mitgelieferte Tool "Ansible Vault" mit AES256 verschlüsselt. Diese Datei kann nur im Control Node auf der Kommandozeile bearbeitet werden. Eine genauere Anleitung kann [hier](https://www.digitalocean.com/community/tutorials/how-to-use-vault-to-protect-sensitive-ansible-data) gefunden werden.
 
-Der Ordner "files" bietet einen zentralen Ort, an dem alle Dateien zu finden sind, die während der Konfiguration des Managed Nodes auf diesen übrtragen werden.
+Der Ordner "files" bietet einen zentralen Ort, an dem alle Dateien zu finden sind, die während der Konfiguration des Managed Nodes auf diesen übertragen werden.
 
 Im Ordner "units" befinden sich weitere Playbooks, die, wie weiter oben beschrieben, im Hauptplaybook inkludiert werden.
 
@@ -80,7 +80,7 @@ Im Ordner "units" befinden sich weitere Playbooks, die, wie weiter oben beschrie
   - Ports und Services werden freigeschalten 
 
 **install-podman.yml**
-- Podman wird installiert
+- Podman Paket wird installiert
 
 **install-repository.yml**
 - Repositorys werden installiert
@@ -130,5 +130,5 @@ Im Ordner "units" befinden sich weitere Playbooks, die, wie weiter oben beschrie
 Die hier dargestellte Reihenfolge der Playbooks ist so nicht im Hauptplaybook inkludiert. Die tatsächliche Reihenfolge ist aus dem Playbook "site.yml" zu entnehmen.
 
 Sowohl der Nginx-, als auch der Nextjs-Container laufen im "service_pod"-Pod. Durch diesen werden die Ports 3000 und 8443 exposed.
-Der Port 8443 wird vom Nginx-Container verwendet, um die Webseite nach außen über einen verschlüsselten TSL-Verbindung bereitzustellen.
-Der Port 3000 wird vom verwendet, damit der Nginx-Container mit dem Nextjs-Container kommunizieren kann. Diese Kommunikation läuft unverschlüsselt innerhalb des Pods. Der Nginx-Container dient dabei als Upstream Server.
+Der Port 8443 wird vom Nginx-Container verwendet, um die Webseite nach außen über eine verschlüsselte TSL-Verbindung bereitzustellen.
+Der Port 3000 wird für die Kommunikation zwischen den beiden Containern. Diese Kommunikation läuft unverschlüsselt innerhalb des Pods. Der Nginx-Container dient dabei als Upstream Server.
