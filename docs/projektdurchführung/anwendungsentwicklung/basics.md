@@ -1,6 +1,6 @@
 # Grundlegendes über die Entwicklung der Anwendung
 
-Hier geben wir einen groben Überblick über die in der Anwendung verwendeten Entwicklungs-Technologien. 
+Im folgenden Abschnitt geben wir einen groben Überblick über die, in der Anwendung verwendeten, Entwicklungs-Technologien. 
 
 ## Technologien und Werkzeuge
 
