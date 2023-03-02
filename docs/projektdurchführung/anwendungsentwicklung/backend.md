@@ -151,7 +151,7 @@ Die Adresssuche im Registrierungsprozess wird mithilfe der Google-Maps-Api umges
 
 ### **Kostenmodelle**
 
-Die Google-Places-API rechnet die jeweiligen Dienste in einem Pay-As-You-Go Modell ab. Siehe [https://firebase.google.com/pricing](https://firebase.google.com/pricing). Für kleinere Anwendungen stellt der Provider ein Plattform Guthaben in Höhe von 200 $ pro Monat kostenlos zur Verfügung. Dies entspricht ca. 12.000 Adresssuchen pro Monat.
+Die Google-Places-API rechnet die jeweiligen Dienste in einem Pay-As-You-Go Modell ab. Siehe [https://firebase.google.com/pricing](https://firebase.google.com/pricing). Für kleinere Anwendungen stellt der Provider ein Plattform Guthaben in Höhe von 200 $ pro Monat kostenlos zur Verfügung. Dies entspricht in unserer Anwendung ca. 12.000 Adresssuchen pro Monat.
 
 ## Beispiel-Implementierungen
 
