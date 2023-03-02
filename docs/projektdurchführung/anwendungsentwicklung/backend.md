@@ -2,17 +2,27 @@
 
 Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im Hintergrund der Anwendung sowie die Benutzer-Authentifizierung.
 
-## Google Firebase
+## Warum Cloud-Computing?
 
-### Nutzwertanalyse/Entscheidungstabelle
+### Vorteile von Cloud-Computing
 
-Anforderungen:
+*   Einfache Skalierbarkeit ggü. einem Self-Hosted Datenbank-Server
+*   Kosteneinsparungen bei der Hardware
+*   Kosteneinsparungen beim Betrieb der Anwendung, durch nutzungsabhängigen Zahlungsmodelle
+*   Ausfallsicherheit und Datensicherheit durch Backup-Regeln
+*   Schnelle Markteinführung möglich, da (fast) kein Installationsaufwand besteht
+*   Cloud-Service-Provider (CSPs) betreiben die zugrunde liegende Infrastruktur, sodass wir uns auf die Anwendungsentwicklung und andere Prioritäten konzentrieren können
+*   Einfacher und (meist) Plattformübergreifender Zugriff auf die Daten möglich
 
-<table><tbody><tr><td><strong>Kriterium</strong></td><td><strong>Azure SQL-Server</strong></td><td><strong>AWS Amplify</strong></td><td><strong>Google Firebase</strong></td></tr><tr><td>Cloud-Dienst (Ausfallsicher)</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Automatische Backup-Regeln sind konfigurierbar</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Geringer Konfigurations-Aufwand</td><td><strong>✘</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Plattformübergreifender Zugriff auf Daten</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>DSGVO-Konforme Datenspeicherung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Kostenlose Entwicklung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Authentifizierungsdienst mit Schnittstelle zur Datenbank vorhanden</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Einfache Echtzeit-Synchronisierung auf allen Clients möglich</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>JavaScript-API oder SDK</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr></tbody></table>
+### Nutzwertanalyse/Entscheidungstabelle des Cloud-Service-Provider
+
+<table><tbody><tr><td><strong>Anforderung</strong></td><td><strong>Azure SQL-Server</strong></td><td><strong>AWS Amplify</strong></td><td><strong>Google Firebase</strong></td></tr><tr><td>Cloud-Dienst</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Automatische Backup-Regeln sind konfigurierbar</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Geringer Konfigurations-Aufwand</td><td><strong>✘</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Plattformübergreifender Zugriff auf Daten</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>DSGVO-Konforme Datenspeicherung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Kostenlose Entwicklung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Authentifizierungsdienst mit Schnittstelle zur Datenbank vorhanden</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Einfache Echtzeit-Synchronisierung auf allen Clients möglich</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>JavaScript-API oder SDK</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Regelmäßige Updates der Schnittstellen</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr></tbody></table>
 
 ### Google Firebase
 
 Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt ein Software-Development-Kit (SDK) und die benötigte Infrastruktur zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
+
+![Firebase](https://devopedia.org/images/article/133/1694.1629979158.png)
 
 ### Beispiel-Implementierung (Abrufen der Firebase-DB und -AUTH Instanz)
 
