@@ -16,11 +16,24 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 
 ### Nutzwertanalyse/Entscheidungstabelle des Cloud-Service-Provider
 
-<table><tbody><tr><td><strong>Anforderung</strong></td><td><strong>Azure SQL-Server</strong></td><td><strong>AWS Amplify</strong></td><td><strong>Google Firebase</strong></td></tr><tr><td>Cloud-Dienst</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Automatische Backup-Regeln sind konfigurierbar</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Geringer Konfigurations-Aufwand</td><td><strong>✘</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Plattformübergreifender Zugriff auf Daten</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>DSGVO-Konforme Datenspeicherung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Kostenlose Entwicklung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Authentifizierungsdienst mit Schnittstelle zur Datenbank vorhanden</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Einfache Echtzeit-Synchronisierung auf allen Clients möglich</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>JavaScript-API oder SDK</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Regelmäßige Updates der Schnittstellen</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr></tbody></table>
+<table><tbody><tr><td><strong>Anforderung</strong></td><td><strong>Azure SQL-Server</strong></td><td><strong>AWS Amplify</strong></td><td><strong>Google Firebase</strong></td></tr><tr><td>Cloud-Dienst</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Automatische Backup-Regeln sind konfigurierbar</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Geringer Konfigurations-Aufwand</td><td><strong>✘</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Plattformübergreifender Zugriff auf Daten</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>DSGVO-Konforme Datenspeicherung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Kostenlos zum Entwickeln und Testen</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Authentifizierungsdienst mit Schnittstelle zur Datenbank vorhanden</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Einfache Echtzeit-Synchronisierung auf allen Clients möglich</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>JavaScript-API oder SDK</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Regelmäßige Updates der Schnittstellen</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr></tbody></table>
 
-### Google Firebase
+## Google Firebase
 
 Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt ein Software-Development-Kit (SDK) und die benötigte Infrastruktur zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
+
+Besonderheiten der Firebase-Plattform ggü. vergleichbaren Plattformen:
+
+*   Datenzugriff und -speicherung erfoglt mithilfe von Methoden aus dem SDK direkt vom clientseitigen Code
+*   Es wird kein Server benötigt, der API-Abfragen weiterverarbeitet
+
+### Verbindungsaufbau
+
+TODO
+
+### Kommunikation
+
+Die Kommunikation erfolgt im Gegensatz zu klassischen Web-Anwendungen direkt mit dem ... TODO
 
 ![](https://user-images.githubusercontent.com/71382635/222440948-0914bf7c-e815-4d50-954f-8e1eea0458d5.png)
 
