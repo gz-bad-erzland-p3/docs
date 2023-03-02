@@ -6,6 +6,26 @@ Das Frontend der Projektarbeit bezieht sich auf alle Benutzeroberflächen der An
 
     Der gesamte Projektcode steht Open-Source auf [GitHub](https://github.com/gz-bad-erzland-p3/projektarbeit) zu verfügung 
 
+## Überblick
+### Schwerpunkte UI Design
+
+Minimalistische UI Look im Corporate Design von Bad Erzland
+
+- Modern
+- Übersichtlich
+- UX Opimiert
+
+--> reduziert Fehlerquellen
+
+### Technologien
+
+| Technologie | Vorteil |
+| ----------- | ------- |
+| NextJS 12 | Bildoptimierung, einfaches Routing zwischen Seiten, Serverside Rendering |
+| React | Wiederverwendbare Komponenten, verbesserte Ladezeiten, einfache Wartun, ... |
+| TailwindCSS | Schnelle & Unkomplizierte Gestaltung mit vordefinierten Klassen |
+| PostCSS | verbesserte Ladezeiten durch CSS optimierung |
+
 ## Landingpage
 
 Zuerst wurde eine Landingpage erstellt, über die man zum Online-Reservierungs-Tool gelangt. </p>
