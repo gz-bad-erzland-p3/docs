@@ -7,7 +7,7 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 ### Anforderungen an das Backend-System
 
 *   Kostengünstig / Kostenlos
-*   Keine zusätzliche Hardware muss angeschafft werden
+*   Keine zusätzliche Hardware benötigt
 *   Datensicherheit und Ausfallsicherheit
 *   Dezentrale Datenspeicherung (nicht Personen- oder Ortsgebunden, wie z.B. eine Virtuelle Maschine auf einem Stick oder Laptop)
 *   Datenzugriff und -speicherung aus JavaScript-Frontend möglich
