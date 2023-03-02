@@ -86,14 +86,14 @@ In unserem Fall beinhalten die Sicherheitsregeln nur die nötigsten Einschränku
 ```json
 {
   "rules": {
-  	"bookings": {
-  		".read": true,
-        ".write": "$uid === auth.uid"
-  	}
-    "users": {
-      "$uid": {
-      	".read": "$uid === auth.uid",
-        ".write": "$uid === auth.uid"
+      "bookings": {
+          ".read": true,
+          ".write": "$uid === auth.uid"
+      }
+      "users": {
+          "$uid": {
+              ".read": "$uid === auth.uid",
+              ".write": "$uid === auth.uid"
       }
     }
   }
