@@ -61,6 +61,11 @@ Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezei
 
 ![grafik](https://user-images.githubusercontent.com/72852065/222351529-dce6f03d-e002-450a-9c71-19a224dc89af.png)
 
+Nach Abschluss wird eine Buchungsbestätigung per E-Mail an die angegebene E-Mailadresse versendet.
+
+![grafik](https://user-images.githubusercontent.com/72852065/222354009-1ddd4ed5-a5b8-4c40-8ba5-66973c6edbbb.png)
+
+
 ## Login
 ### Login
 Der Login erfolgt über die Eingabe von E-Mail und Passwort.
