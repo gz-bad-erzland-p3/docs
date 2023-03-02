@@ -10,7 +10,7 @@
 | Grünes Netzwerk    |  172.15.0.0 (Class B)  |  255.255.0.0 (/16)  |  172.15.0.2  |  Ja  |    Netz für interne/administrierte Geräte    |
 | Blaues Netzwerk    |  172.16.0.0 (Class B)  |  255.255.0.0 (/16)  |  172.16.0.2  |  Ja  | Netz für externe/nicht administrierte Geräte |
 
-Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. Die Konfiguration dieses DHCPs erfolgt über die "vmnetconfig"-Datei (siehe ./doku/vmnetconf/vmnetconfig)
+Die Netze werden durch den integrierten DHCP des VMWare Players bereitgestellt. Die Konfiguration dieses DHCPs erfolgt über die "[vmnetconfig](https://github.com/gz-bad-erzland-p3/Automatisierung/blob/main/lnx-docker/vmware/vmnetdhcp.conf)"-Datei.
 
 <strong>Übersicht der Server</strong>
 
