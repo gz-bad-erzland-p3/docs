@@ -2,10 +2,6 @@
 
 Hier geben wir einen groben Überblick über die in der Anwendung verwendeten Entwicklungs-Technologien. 
 
-!!! info "Projektcode"
-
-   Der gesamte Projektcode steht Open-Source auf \[GitHub\](https://github.com/gz-bad-erzland-p3/projektarbeit) zur Verfügung
-
 ## Technologien und Werkzeuge
 
 ### React
