@@ -22,7 +22,7 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 
 Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt ein Software-Development-Kit (SDK) und die benötigte Infrastruktur zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
 
-![Firebase](https://devopedia.org/images/article/133/1694.1629979158.png)
+![](https://user-images.githubusercontent.com/71382635/222440948-0914bf7c-e815-4d50-954f-8e1eea0458d5.png)
 
 ### Beispiel-Implementierung (Abrufen der Firebase-DB und -AUTH Instanz)
 
@@ -86,6 +86,10 @@ Durch verschiendene SDKs ermöglicht Firebase den sicheren Zugriff auf die versc
 ### Entity-Relationship-Model
 
 ![](https://user-images.githubusercontent.com/71382635/222356133-a7ff71ba-c460-4b63-80a6-980b45456c2f.png)
+
+### Relationenmodell
+
+siehe [Firebase Konsole](https://console.firebase.google.com/u/5/) (benötigt Anmeldung)
 
 ### Beispiel-Implementierung (Use-Case 2)
 
