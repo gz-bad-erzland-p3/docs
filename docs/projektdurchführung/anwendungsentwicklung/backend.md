@@ -11,7 +11,7 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 *   Kann Datensicherheit und Ausfallsicherheit gewährleisten
 *   Dezentrale Datenspeicherung (nicht Personen- oder Ortsgebunden, wie z.B. eine Virtuelle Maschine auf einem Stick oder Laptop)
 *   Datenzugriff und -speicherung aus JavaScript-Frontend möglich
-*   Einfache Backup-Möglichkeit
+*   Einfache und wenn möglich automatisierte Backup-Möglichkeiten
 *   Geringer Konfigurations- und Entwicklungsaufwand
 *   Sichere Schnittstellen
 *   DSGVO-Konforme Datenverarbeitung muss möglich sein
