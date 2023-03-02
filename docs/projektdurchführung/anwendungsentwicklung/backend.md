@@ -13,7 +13,7 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 *   Datenzugriff und -speicherung aus JavaScript-Frontend möglich
 *   Einfache und wenn möglich automatisierte Backup-Möglichkeiten
 *   Geringer Konfigurations- und Entwicklungsaufwand
-*   Schnittstellen auf neuesten Sicherheitsstandards
+*   Schnittstellen mit neuesten Sicherheitsstandards vorhanden
 *   DSGVO-Konforme Datenverarbeitung muss möglich sein
 
 ### Vorteile von Cloud-Computing
