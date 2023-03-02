@@ -1,1 +1,1 @@
-In einem Projekt gibt es 4 Projektphasen. Projektdefinition, Projektentwurf, Projektdurchführung und der Pojektabschluss. In dieser Dokumentation sind 3 der 4 Projektphasen genauer beschrieben. Als Projektabschluss dient die Vorstellung des Projektes
+
