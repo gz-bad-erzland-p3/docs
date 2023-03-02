@@ -77,6 +77,33 @@ Firebase bietet auch eine benutzerfreundliche Konsole, mit der Entwickler die Da
 
 Durch verschiendene SDKs ermöglicht Firebase den sicheren Zugriff auf die verschiedenen Produkte (z.B. Datenbank und den Authzentifizierungsdienst) direkt vom clientseitigen Code. Zudem ist das SDK in verschiedensten Programmiersprachen verfügbar, wie z.B. SwiftUI, Swift, Objective-C, Java, Kotlin, JavaScript (modular und namespaced), Flutter, REST, C++, Unity uvm.
 
+### Sicherheitsregeln
+
+Sicherheitsregeln dienen der Zugriffskontrolle und dem Schutz vor böswilligen Benutzern und Cyber-Attacken.
+
+In unserem Fall beinhalten die Sicherheitsregeln nur die nötigsten Einschränkungen und sind sehr weit gefasst.
+
+```json
+{
+  "rules": {
+  	"bookings": {
+  		".read": true,
+        ".write": "$uid === auth.uid"
+  	}
+    "users": {
+      "$uid": {
+      	".read": "$uid === auth.uid",
+        ".write": "$uid === auth.uid"
+      }
+    }
+  }
+}
+```
+
+Diese können jedoch ohne Komplikationen oder Datenverluste beim Produktivgang in ihrer Granularität verengt werden.
+
+Siehe [Firebase-Dokumentation](https://firebase.google.com/docs/rules/rules-language?hl=de#database).
+
 ### Entity-Relationship-Model
 
 ![](https://user-images.githubusercontent.com/71382635/222356133-a7ff71ba-c460-4b63-80a6-980b45456c2f.png)
@@ -156,7 +183,7 @@ Session-Cookie setzen (wird bei einer erfolgreicher Authentifizierung automatisc
 setPersistence(auth, browserSessionPersistence) //Funktion aus dem Firebase-JS-SDK (firebase/auth)
 ```
 
-### Benutzer-Registrierung und Speicherung der Benutzerdaten 
+### Benutzer-Registrierung und Speicherung der Benutzerdaten
 
 Methode, um einen Benutzer im System zu erstellen und dessen angegebene Daten in der Datenbank zu speichern:
 
