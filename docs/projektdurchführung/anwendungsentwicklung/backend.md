@@ -1,13 +1,19 @@
 # Backend
 
+Das Frontend der Projektarbeit bezieht sich auf alle Benutzeroberflächen der Anwendung sowie der grafischen Gestaltung der Startseite (zu engl. Landingpage)
+
+!!! info "Projektcode"
+
+   Der gesamte Projektcode steht Open-Source auf \[GitHub\](https://github.com/gz-bad-erzland-p3/projektarbeit) zur Verfügung 
+
 ## Entwicklungswerkzeuge
 
 *   Programmiersprachen: TypeScript, CSS, HTML
     *   von Microsoft entwickelte Skriptsprache, welche JavaScript um die Funktionalitäten einer Objektorientierten Sprache erweitert.
-*   Framework: Next.js  (React)
+*   Framework: Next.js (React)
     *   Open-Source-Webentwicklungs-Framework, das React-basierte Webanwendungen mit serverseitigem Rendering ermöglicht.
-*   Datenbank- und Authentifizierungs-Schnittstelle: Google Firebase 
-    *   Entwicklungs-Plattform für mobile und Webanwendungen. Das SDK ermöglicht dem Entwickler, einfach und effizient Funktionalitäten mittels Programmierschnittstellen auf verschiedenen Plattformen bereitzustellen. 
+*   Datenbank- und Authentifizierungs-Schnittstelle: Google Firebase
+    *   Entwicklungs-Plattform für mobile und Webanwendungen. Das SDK ermöglicht dem Entwickler, einfach und effizient Funktionalitäten mittels Programmierschnittstellen auf verschiedenen Plattformen bereitzustellen.
 
 ## Google Firebase
 
@@ -37,13 +43,13 @@ Firebase-Konfigurationen hinterlegen
 
 ```typescript
 const firebaseConfig = {
-	apiKey: "AIzaSyBnDu6VFsaZIIPYG6AWNSqKqnVpgTEplY4",
-	authDomain: "gz-bad-erzland-a5231.firebaseapp.com",
-	projectId: "gz-bad-erzland-a5231",
-	storageBucket: "gz-bad-erzland-a5231.appspot.com",
-	messagingSenderId: "389584456404",
-	appId: "1:389584456404:web:0af49a35ba216bbd0dc941",
-	measurementId: "G-3QLDSXMNVG"
+    apiKey: "AIzaSyBnDu6VFsaZIIPYG6AWNSqKqnVpgTEplY4",
+    authDomain: "gz-bad-erzland-a5231.firebaseapp.com",
+    projectId: "gz-bad-erzland-a5231",
+    storageBucket: "gz-bad-erzland-a5231.appspot.com",
+    messagingSenderId: "389584456404",
+    appId: "1:389584456404:web:0af49a35ba216bbd0dc941",
+    measurementId: "G-3QLDSXMNVG"
 };
 ```
 
@@ -93,11 +99,11 @@ Beim Abschließen des Buchungsprozesses wird folgende Funktion zum Speichern der
 ```typescript
 
 async function sendBooking(db, bookingId, data) {
-	try{
-		await set(ref(db, 'bookings/' + bookingId), data); //Funktion aus dem Firebase-JS-SDK (firebase/util)
-	} catch(e){
-		console.log('Error while saving current booking', e)
-	}	
+    try{
+        await set(ref(db, 'bookings/' + bookingId), data); //Funktion aus dem Firebase-JS-SDK (firebase/util)
+    } catch(e){
+        console.log('Error while saving current booking', e)
+    }    
 }
 ```
 
@@ -113,7 +119,7 @@ Die Firebase-Authentifizierung ist bei korrekter Implementierung von hoher Siche
 
 Das Firebase-Authentifizierungs SDK bietet Methoden zum Erstellen und Verwalten von Benutzern sowie das Senden von E-Mails zum Zurücksetzen von Passwörtern.
 
-Grundlegende Funktionsweise ist wie folgt: Ein Authentifizierungstoken wird nach einer erfolgreichen Registrierung oder Anmeldung erstellt. Mit diesem kann auf die grundlegenden Profilinformationen des Benutzers zugegriffen werden und der Zugriff des Benutzers auf Daten gesteuert werden, die in anderen Firebase-Produkten gespeichert sind. 
+Grundlegende Funktionsweise ist wie folgt: Ein Authentifizierungstoken wird nach einer erfolgreichen Registrierung oder Anmeldung erstellt. Mit diesem kann auf die grundlegenden Profilinformationen des Benutzers zugegriffen werden und der Zugriff des Benutzers auf Daten gesteuert werden, die in anderen Firebase-Produkten gespeichert sind.
 
 ### Konfiguration in der Firebase-Console
 
@@ -125,16 +131,16 @@ Beispiel-Methode, um einen Benutzer im System zu erstellen und dessen angegebene
 
 ```javascript
 async function signUp(email, passwort, name, prename, birthday, address_formatted, place_id) {
-	await createUserWithEmailAndPassword(auth, email, passwort); //Funktion aus dem Firebase-JS-SDK (firebase/auth)
-	const uid = auth.currentUser.uid;
-	await set(ref(db, 'users/' + uid), { //Funktionen set und ref aus dem Firebase-JS-SDK (firebase/database)
-	  Name: name,
-	  Email: email,
-	  Vorname: prename,
-	  Geburtsdatum: birthday,
-	  Adresse_Formatiert: address_formatted,
-	  Adresse_GooglePlaceId: place_id
-	});
+    await createUserWithEmailAndPassword(auth, email, passwort); //Funktion aus dem Firebase-JS-SDK (firebase/auth)
+    const uid = auth.currentUser.uid;
+    await set(ref(db, 'users/' + uid), { //Funktionen set und ref aus dem Firebase-JS-SDK (firebase/database)
+      Name: name,
+      Email: email,
+      Vorname: prename,
+      Geburtsdatum: birthday,
+      Adresse_Formatiert: address_formatted,
+      Adresse_GooglePlaceId: place_id
+    });
 };
 ```
 
