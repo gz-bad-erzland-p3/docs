@@ -227,7 +227,7 @@ Beim Abschließen des Buchungsprozesses wird folgende Methode zum Speichern der 
 
 async function sendBooking(db, bookingId, data) {
     try{
-        await set(ref(db, 'bookings/' + bookingId), data); //Funktion aus dem Firebase-JS-SDK (firebase/util)
+        await set(ref(db, 'bookings/' + bookingId), data); //Funktionen set und ref aus dem Firebase-JS-SDK (firebase/database)
     } catch(e){
         console.log('Error while saving current booking', e)
     }    
