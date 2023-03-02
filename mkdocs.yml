@@ -18,8 +18,15 @@ nav:
     - index.md
     - Projektteilnehmer: ueberblick/projektteilnehmer.md
     - Informationen: ueberblick/informationen.md
-  - Anleitungen & Informationen:
-    - anleitungen/index.md
+  - Vortrag:
+    - vortrag/index.md
+    - Use-Cases: vortrag/usecases.md
+    - Projektdefinition:
+      - Lastenheft & Pflichtenheft: vortrag/lastenheft_pflichtenheft.md
+      - Ist-Soll Analyse: vortrag/ist-soll.md
+      - Fachkonzeptmodellierung & Architekturbeschreibung: vortrag/fachkonzeptmodellierung_architekturbeschreibung.md
+    - Anwendungsentwicklung:
+      - Frontend: vortrag/frontend.md
   - Projektphasen:
     - Projektdefinition:
       - Protokoll: projektdefinition/protokoll.md
@@ -33,10 +40,10 @@ nav:
         - Probleme: projektdurchführung/anwendungsentwicklung/probleme.md
       - Systemintegration:
         - Netzwerk: projektdurchführung/systemintegration/netzwerk.md
+        - Firewall: projektdurchführung/systemintegration/firewall.md
         - Webserver: projektdurchführung/systemintegration/webserver.md
         - Monitoring: projektdurchführung/systemintegration/monitoring.md
         - Automatisierung Website: projektdurchführung/systemintegration/automatisierung.md
-        - Firewall: projektdurchführung/systemintegration/firewall.md
         - DNS: projektdurchführung/systemintegration/dns.md
 
 plugins:

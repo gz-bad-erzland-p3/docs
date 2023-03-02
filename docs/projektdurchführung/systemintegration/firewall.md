@@ -83,12 +83,14 @@ forward-zone:
 - folgende Servicegruppe gibt es aktuell: 
 
 check_mk-agent-group
+
 | Name                    | Port | Protocol |
 |-------------------------|------|----------|
 | check_mk-agent          | 6556 | TCP      |
 | check_mk-agent-register | 8000 | TCP      |
 
 dns
+
 | Name      | Port | Protocol |
 |-----------|------|----------|
 | DNS (TCP) | 53   | TCP      |
