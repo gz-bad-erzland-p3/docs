@@ -4,7 +4,7 @@ Das Frontend der Projektarbeit bezieht sich auf alle Benutzeroberflächen der An
 
 !!! info "Projektcode"
 
-    Der gesamte Projektcode steht Open-Source auf [GitHub](https://github.com/gz-bad-erzland-p3/projektarbeit) zu verfügung 
+    Der gesamte Projektcode steht Open-Source auf [GitHub](https://github.com/gz-bad-erzland-p3/projektarbeit) zur Verfügung 
 
 ## Überblick
 ### Schwerpunkte UI Design
