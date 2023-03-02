@@ -63,7 +63,7 @@ Die Kommunikation erfolgt im Gegensatz zu klassischen Web-Anwendungen direkt mit
 
 ## Datenbank
 
-Als DBMS wird die Echtzeitdatenbank von [Firebase](https://www.firebase.com) verwendet.
+Als DBMS wird die Firebase-Console mit Echtzeitdatenbank von [Google Firebase](https://www.firebase.com) verwendet.
 
 ### Übersicht
 
