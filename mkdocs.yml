@@ -39,6 +39,16 @@ nav:
         - Automatisierung Website: projektdurchführung/systemintegration/automatisierung.md
         - Firewall: projektdurchführung/systemintegration/firewall.md
         - DNS: projektdurchführung/systemintegration/dns.md
+  - Vortrag:
+    - vortrag/index.md
+    - Anwendungsentwicklung:
+      - Frontend: vortrag/frontend.md
+      - Backend: vortrag/backend.md
+    - Systemintegration:
+      - Netzwerk & Firewall: vortrag/netzwerk_firewall.md
+      - Webserver: vortrag/webserver.md
+    - Reflexion: vortrag/reflexion.md
+    - Fragen: vortrag/fragen.md 
 
 plugins:
   - search
