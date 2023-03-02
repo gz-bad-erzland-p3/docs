@@ -2,22 +2,7 @@
 
 Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im Hintergrund der Anwendung sowie die Benutzer-Authentifizierung.
 
-!!! info "Projektcode"
-
-    Der gesamte Projektcode steht Open-Source auf [GitHub](https://github.com/gz-bad-erzland-p3/projektarbeit) zur Verfügung 
-
-## Entwicklungswerkzeuge
-
-*   Programmiersprachen: TypeScript, CSS, HTML
-    *   von Microsoft entwickelte Skriptsprache, welche JavaScript um die Funktionalitäten einer Objektorientierten Sprache erweitert.
-*   Framework: Next.js (React)
-    *   Open-Source-Webentwicklungs-Framework, das die Entwicklung von React-basierten Webanwendungen mit serverseitigem Rendering ermöglicht.
-*   Datenbank- und Authentifizierungs-Schnittstelle: Google Firebase
-    *   Entwicklungs-Plattform für mobile und Webanwendungen. Das SDK ermöglicht dem Entwickler, einfach und effizient Funktionalitäten mittels Programmierschnittstellen auf verschiedenen Plattformen bereitzustellen.
-
 ## Google Firebase
-
-Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt ein Software-Development-Kit (SDK) und die benötigte Infrastruktur zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
 
 ### Nutzwertanalyse/Entscheidungstabelle
 
@@ -28,6 +13,10 @@ Weitere Vorteile der Firebase-Plattform:
 *   Extrem niedriger Entwicklungsaufwand durch ein umfassendes und gut dokumentiertes SDK
 *   SDK bietet ein einfach zu implementierendes Event-Handling
 *   SDK bietet eine einfache Verknüpfung mit dem JavaScript-Frontend
+
+### Google Firebase
+
+Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt ein Software-Development-Kit (SDK) und die benötigte Infrastruktur zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
 
 ### Beispiel-Implementierung (Abrufen der Firebase-DB und -AUTH Instanz)
 
