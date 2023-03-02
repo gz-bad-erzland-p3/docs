@@ -1,6 +1,6 @@
 # Backend
 
-Das Frontend der Projektarbeit bezieht sich auf alle Benutzeroberflächen der Anwendung sowie der grafischen Gestaltung der Startseite (zu engl. Landingpage)
+Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im Hintergrund der Anwendung sowie die Benutzer-Authentifizierung.
 
 !!! info "Projektcode"
 
@@ -11,25 +11,25 @@ Das Frontend der Projektarbeit bezieht sich auf alle Benutzeroberflächen der An
 *   Programmiersprachen: TypeScript, CSS, HTML
     *   von Microsoft entwickelte Skriptsprache, welche JavaScript um die Funktionalitäten einer Objektorientierten Sprache erweitert.
 *   Framework: Next.js (React)
-    *   Open-Source-Webentwicklungs-Framework, das React-basierte Webanwendungen mit serverseitigem Rendering ermöglicht.
+    *   Open-Source-Webentwicklungs-Framework, das die Entwicklung von React-basierten Webanwendungen mit serverseitigem Rendering ermöglicht.
 *   Datenbank- und Authentifizierungs-Schnittstelle: Google Firebase
     *   Entwicklungs-Plattform für mobile und Webanwendungen. Das SDK ermöglicht dem Entwickler, einfach und effizient Funktionalitäten mittels Programmierschnittstellen auf verschiedenen Plattformen bereitzustellen.
 
 ## Google Firebase
 
-Google Firebase ist eine von Google entwickelte Entwicklungs-Plattform für mobile und Webanwendungen. Sie stellt über ein Software Development Kit Tools und Infrastruktur zur Verfügung, die es einem Entwickler ermöglichen sollen, einfacher und effizienter Funktionen mittels Programmierschnittstellen auf verschiedenen Plattformen bereitzustellen.
+Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt ein Software-Development-Kit (SDK) und die benötigte Infrastruktur zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
 
 ### Nutzwertanalyse/Entscheidungstabelle
 
 <table><tbody><tr><td>todo</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>AWS Amplify</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>Google Firebase</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>Backendless</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
 
 Weitere Vorteile der Firebase-Plattform:
+*   Plattformübergreifend
+*   Extrem niedriger Entwicklungsaufwand durch ein umfassendes und gut dokumentiertes SDK
+*   SDK bietet ein einfach zu implementierendes Event-Handling
+*   SDK bietet eine einfache Verknüpfung mit dem JavaScript-Frontend
 
-*   Optionale Objekteigenschaften sind besser abbildbar
-*   Es ist ein sehr ausgereiftes Event-Handling implementiert
-*   Extrem einfache Verknüpfung mit einem JavaScript-Frontend
-
-### Implementierung
+### Beispiel-Implementierung (Abrufen der Firebase-DB und -AUTH Instanz)
 
 Importieren der benötigten Pakete des Firebase-SDK
 
@@ -74,13 +74,13 @@ setPersistence(auth, browserSessionPersistence) //Funktion aus dem Firebase-JS-S
 
 ## Datenbank
 
-Als Datenbanklösung wird die Echtzeitdatenbank von [Firebase](https://www.firebase.com) verwendet.
+Als DBMS wird die Echtzeitdatenbank von [Firebase](https://www.firebase.com) verwendet.
 
 ### Übersicht
 
 Firebase bietet eine Cloudbasierte NoSQL-Echtzeitdatenbank, die speziell für die Verwendung in mobilen und Webanwendungen entwickelt wurde. Die Datenbank ist in der Lage, Daten in Echtzeit auf allen Clients zu synchronisieren und somit Änderungen in der Anwendung in Echtzeit darzustellen. Sollte die Anwendung offline gehen, bleiben die Daten erhalten. Sobald die Verbindung wiederhergestellt ist, werden die Änderungen automatisch in der Cloud-Datenbank aktualisiert.
 
-Die Daten werden in Form eines JSON-Objekts gespeichert.
+Die Speicherung erfolgt in Form eines JSON-Objekts.
 
 Die Datenbank kann eng mit anderen Firebase-Produkten, wie zum Beispiel der Firebase Authentifizierung, Cloud Messaging und Cloud Storage verknüpft werden. Dies ermöglicht es Entwicklern, leistungsfähige Anwendungen zu erstellen, die auf Echtzeitdaten basieren.
 
