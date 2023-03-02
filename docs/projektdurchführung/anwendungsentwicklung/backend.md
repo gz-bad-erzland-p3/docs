@@ -8,7 +8,7 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 
 *   Kostengünstig / Kostenlos
 *   Keine zusätzliche Hardware benötigt
-*   Datensicherheit und Ausfallsicherheit
+*   Kann Datensicherheit und Ausfallsicherheit gewährleisten
 *   Dezentrale Datenspeicherung (nicht Personen- oder Ortsgebunden, wie z.B. eine Virtuelle Maschine auf einem Stick oder Laptop)
 *   Datenzugriff und -speicherung aus JavaScript-Frontend möglich
 *   Einfache Backup-Möglichkeit
