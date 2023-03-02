@@ -4,6 +4,33 @@ Im folgenden Abschnitt geben wir einen groben Überblick über die, in der Anwen
 
 ## Technologien und Werkzeuge
 
+### Programmiersprache - TypeScipt
+
+**Was ist TypeScript?**
+
+s
+
+**Warum verwenden wir GitHub?**
+
+*   s
+
+### Versionsverwaltung - GitHub
+
+**Was ist GitHub?**
+
+GitHub ist ein Cloud-Dienst zur Versionsverwaltung für Software-Entwicklungsprojekte.
+
+**Warum verwenden wir GitHub?**
+
+*   Kostenlos
+*   Ausfallsicher
+*   Einfache Verknüpfung mit Build- und Deployment-Tools, wie z.B. Vercel
+*   Ermöglicht eine unkomplizierte Zusammenarbeit bei der Entwicklung
+
+### Entwicklungsumgebung - Visual Studio Code
+
+**Warum verwenden wir Visual Studio Code?**
+
 ### React
 
 **Was ist React?**
@@ -59,33 +86,6 @@ NextJS, erstellt von Vercel, ist ein Open-Source-JavaScript-Framework, mit dem E
 *   coinbase
 *   Tripadviser
 *   OpenAI
-
-### Programmiersprache - TypeScipt
-
-**Was ist TypeScript?**
-
-s
-
-**Warum verwenden wir GitHub?**
-
-*   s
-
-### Versionsverwaltung - GitHub
-
-**Was ist GitHub?**
-
-GitHub ist ein Cloud-Dienst zur Versionsverwaltung für Software-Entwicklungsprojekte.
-
-**Warum verwenden wir GitHub?**
-
-*   Kostenlos
-*   Ausfallsicher
-*   Einfache Verknüpfung mit Build- und Deployment-Tools, wie z.B. Vercel
-*   Ermöglicht eine unkomplizierte Zusammenarbeit bei der Entwicklung
-
-### Entwicklungsumgebung - Visual Studio Code
-
-**Warum verwenden wir Visual Studio Code?**
 
 ## **Coding-Richtlinien**
 
