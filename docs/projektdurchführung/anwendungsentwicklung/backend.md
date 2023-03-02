@@ -6,13 +6,9 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 
 ### Nutzwertanalyse/Entscheidungstabelle
 
-<table><tbody><tr><td>todo</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>AWS Amplify</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>Google Firebase</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>Backendless</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
+Anforderungen:
 
-Weitere Vorteile der Firebase-Plattform:
-*   Plattformübergreifend
-*   Extrem niedriger Entwicklungsaufwand durch ein umfassendes und gut dokumentiertes SDK
-*   SDK bietet ein einfach zu implementierendes Event-Handling
-*   SDK bietet eine einfache Verknüpfung mit dem JavaScript-Frontend
+<table><tbody><tr><td><strong>Kriterium</strong></td><td><strong>Azure SQL-Server</strong></td><td><strong>AWS Amplify</strong></td><td><strong>Google Firebase</strong></td></tr><tr><td>Cloud-Dienst (Ausfallsicher)</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Automatische Backup-Regeln sind konfigurierbar</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Geringer Konfigurations-Aufwand</td><td><strong>✘</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Plattformübergreifender Zugriff auf Daten</td><td><strong>✓</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>DSGVO-Konforme Datenspeicherung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Kostenlose Entwicklung ist möglich</td><td><strong>✓</strong></td><td><strong>✘</strong></td><td><strong>✓</strong></td></tr><tr><td>Authentifizierungsdienst mit Schnittstelle zur Datenbank vorhanden</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>Einfache Echtzeit-Synchronisierung auf allen Clients möglich</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr><tr><td>JavaScript-API oder SDK</td><td><strong>✘</strong></td><td><strong>✓</strong></td><td><strong>✓</strong></td></tr></tbody></table>
 
 ### Google Firebase
 
