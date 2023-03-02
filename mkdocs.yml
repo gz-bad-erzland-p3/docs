@@ -35,6 +35,8 @@ nav:
         - Monitoring: projektdurchführung/systemintegration/monitoring.md
         - Automatisierung Website: projektdurchführung/systemintegration/automatisierung.md
         - DNS: projektdurchführung/systemintegration/dns.md
+    - Projektabschluss:
+      - Soll-Ist Analyse: soll-ist.md
 
 plugins:
   - search
