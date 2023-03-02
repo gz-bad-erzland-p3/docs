@@ -18,13 +18,13 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 
 ### Vorteile von Cloud-Computing
 
-*   Einfache Skalierbarkeit ggü. einem Self-Hosted Datenbank-Server
-*   Kosteneinsparungen bei der Hardware
+*   Einfachere Skalierbarkeit ggü. einem Self-Hosted Datenbank-Server
+*   Keine Kosten durch Anschaffung und Wartung der Hardware
 *   Kosteneinsparungen beim Betrieb der Anwendung, durch nutzungsabhängigen Zahlungsmodelle
 *   Ausfallsicherheit und Datensicherheit durch Backup-Regeln
-*   Schnelle Markteinführung möglich, da (fast) kein Installationsaufwand besteht
-*   Cloud-Service-Provider (CSPs) betreiben die zugrunde liegende Infrastruktur, sodass wir uns auf die Anwendungsentwicklung und andere Prioritäten konzentrieren können
-*   Einfacher und (meist) Plattformübergreifender Zugriff auf die Daten möglich
+*   Schnelle Installation und Markteinführung möglich, da (fast) kein Installationsaufwand besteht
+*   Cloud-Service-Provider (CSPs) betreiben die zugrunde liegende Infrastruktur, sodass wir uns die Anwendungsentwicklung priorisieren können
+*   Einfacher und (meist) plattformübergreifender Zugriff auf die Daten möglich
 
 ### Nutzwertanalyse/Entscheidung für einen Cloud-Service-Provider
 
