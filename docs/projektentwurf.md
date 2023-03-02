@@ -8,3 +8,6 @@ Das Feinkonzept kann unter folgendem Link abgerufen werden: </br>
 
 ## Ganttplan
 ![Ganttplan](https://user-images.githubusercontent.com/72852065/212835741-f619ad39-77f2-4544-9386-869ff5b53da4.PNG)
+
+## Use-Case-Diagramm
+![Office_Sharing_Erzland_Use_Case_Diagramm](https://user-images.githubusercontent.com/72852065/221808646-e322fe7b-a8e1-4893-96c0-40db986afbfe.png)
