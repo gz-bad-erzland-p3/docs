@@ -21,8 +21,6 @@ Minimalistische UI Look im Corporate Design von Bad Erzland
 
 | Technologie | Vorteil |
 | ----------- | ------- |
-| NextJS 12 | Bildoptimierung, einfaches Routing zwischen Seiten, Serverside Rendering |
-| React | Wiederverwendbare Komponenten, verbesserte Ladezeiten, einfache Wartun, ... |
 | TailwindCSS | Schnelle & Unkomplizierte Gestaltung mit vordefinierten Klassen |
 | PostCSS | verbesserte Ladezeiten durch CSS optimierung |
 
