@@ -24,39 +24,42 @@ Single-Page-Anwendungen sind eine häufige Art von Buchungsseite, da sie eine sc
 #### Terminauswahl
 Als erstes gelangt man zur Terminauswahl. Dort können der Zeitraum und die Start-, bzw. Endzeit ausgewählt werden.
 
-![grafik](https://user-images.githubusercontent.com/72852065/214051100-b5c7c2e9-46d4-47be-acec-2c0f92d36e3f.png)
+![grafik](https://user-images.githubusercontent.com/72852065/222348501-612855e5-9ecb-4fb4-b663-a2907bdcc4cd.png)
 
 In der Terminauswahl muss die Mindest- und Maximalmietdauer beachtet werden. Wird die Mietdauer über-/unterschritten wird eine Meldung oben in der Ecke angezeigt.
 
-![grafik](https://user-images.githubusercontent.com/72852065/214259770-c4acab74-c43d-495c-a5e6-a47b9f81e8ec.png)
+![grafik](https://user-images.githubusercontent.com/72852065/222348869-5689fbbf-9f36-4fe4-aa25-2dbae1deec15.png)
 
 #### Arbeitsplatzauswahl
 Bei der Arbeitsplatzauswahl kann zwischen Einzel- oder Doppelarbeitsplatz gewählt werden. Optionen, welche ausgegraut werden sind aufgrund anderer Buchungen nicht mehr auswählbar.
 
-![grafik](https://user-images.githubusercontent.com/72852065/214238131-8b658d7c-9440-4e11-8902-e0bc2cb3db5e.png)
+![grafik](https://user-images.githubusercontent.com/72852065/222349232-4a37b591-3b46-4521-82dc-732e6574490a.png)
 
 #### Konfiguration
 In der Konfiguration muss als erstes ausgewählt werden, ob ein eigenes Gerät mitgebracht werden soll oder nicht. Falls keins mitgebracht wird besteht die möglichkeit verschiedene Geräte zu konfigurieren.
 
-![grafik](https://user-images.githubusercontent.com/72852065/214238195-7e06409d-9df7-4db1-ae86-0135241227f9.png)
+![grafik](https://user-images.githubusercontent.com/72852065/222349408-0ef1b596-2db1-437f-8e73-1df39cc55c61.png)
 
 Wird "Ich brauche ein Gerät" gewählt, erweitert sich die Seite und es werden weitere Konfigurationsmöglichkeiten angezeigt. Nun kann zwischen Laptop, Desktop-PC und Barebone entschieden werden, eine Auswahl über das Betriebssystem getroffen und kostenlose Browser und Kommunikationsapplikationen ausgewählt werden. Zusätzlich können noch Bemerkungen bzw. Wünsche eingetragen werden.
 
-![grafik](https://user-images.githubusercontent.com/72852065/214238626-97ce8523-f0ab-4072-9268-28c2ba0c282a.png)
-![edited](https://user-images.githubusercontent.com/72852065/214238361-8646f52c-9586-41d5-8a88-c2136ac99559.png)
+![grafik](https://user-images.githubusercontent.com/72852065/222349812-e4af31f3-ea4d-4b62-8cf5-08d92e79ccc8.png)
+![Unbenannt](https://user-images.githubusercontent.com/72852065/222350215-a7460d27-e64d-4120-8744-7596a1a3b547.png)
 
 #### Reservierung
 
 Nach erfolgreicher Anmeldung/Reservierung wird der Interessent gebeten auf einen Button zu klicken. Hiermit ist der konfigurierte Arbeitsplatz für 20min reserviert und es werden die Zahlungsmethoden angezeigt.
 
-![grafik](https://user-images.githubusercontent.com/72852065/214779369-5d4ffa31-72c1-42e4-8db4-a852c3bacd98.png)
+![grafik](https://user-images.githubusercontent.com/72852065/222350629-1f724ff5-4b9e-4c1c-b3bf-960711f20328.png)
+![grafik](https://user-images.githubusercontent.com/72852065/222351133-8a90bb89-cd83-4acc-a676-48c1491ca2ce.png)
 
 #### Zahlungsseite
-Auf der Zahlungsseite kann zwischen 3 Zahlungsmethoden ausgewählt werden.
-![grafik](https://user-images.githubusercontent.com/72852065/214248987-1a45aa94-9278-404d-a085-1e85b7e6f61d.png)
+Auf der Zahlungsseite wird zum einen eine Übersicht über die aktuelle Auswahl angezeigt und es kann zwischen 3 Zahlungsmethoden ausgewählt werden.
+
+![grafik](https://user-images.githubusercontent.com/72852065/222351425-dcc75e8b-9a78-4b58-9a7d-3223ea64f6a3.png)
 
 Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezeigt. Damit ist die Reservierung abgeschlossen und der Arbeitsplatz für den gewünschten Zeitraum gebucht.
-![grafik](https://user-images.githubusercontent.com/72852065/214775635-1ef426d6-a9ed-4fd8-9093-bf22147b758b.png)
+
+![grafik](https://user-images.githubusercontent.com/72852065/222351529-dce6f03d-e002-450a-9c71-19a224dc89af.png)
 
 ## Login
 ### Login
@@ -66,6 +69,7 @@ Der Login erfolgt über die Eingabe von E-Mail und Passwort.
 
 ### Registrierung
 Wenn noch kein Konto vorhanden ist, besteht die Möglichkeit sich zu registrieren.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/214049524-e6706c16-2728-41c2-8bfa-6ebdd5f9c855.png)
 
 Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels HTTP- bzw- REST-Request an die REST-API (Firebase) übermittelt. Nach Abschluss der Registrierung wird eine Bestätigungsmail gesendet.</p>
@@ -76,10 +80,12 @@ Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels H
 ## Profilübersicht
 
 In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch möglich das Passwort zurückzusetzen, die Adresse zu ändern oder das Konto zu löschen.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/214782181-fedd5236-6d55-4dd7-87ed-2f74f864b8d7.png)
 
 ## Buchungsübersicht
 In der Profilübersicht werden die Buchungen angezeigt und es besteht die Möglichkeit die Buchungen zu stonieren.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/214781607-3d67e685-4958-4602-b5ef-4288738b47c9.png)
 
 ## Dokumentation / Hilfe Seiten

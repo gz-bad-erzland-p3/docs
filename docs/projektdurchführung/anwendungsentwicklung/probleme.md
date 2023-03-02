@@ -2,6 +2,7 @@
 ## Landingpage
 
 ## Terminauswahl
+Die Terminauswahl erfolgt in unserem Projekt über eine Kalenderauswahl. Als erstes war es angedacht belegte Zeiträume in dem Kalender anzuzeigen, was sich im Nachhinein aber als nicht umsetzbar herausstellte. Deshalb haben wir in der Entwicklung darauf verzichtet. 
 
 ## Arbeitsplatztypauswahl
 
