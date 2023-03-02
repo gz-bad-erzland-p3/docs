@@ -1,7 +1,7 @@
-### 3.2.2 Automatisierung des Webservers
+# Automatisierung des Webservers
 Die Bereitstellung und Konfiguration des Webservers erfolgt über [Vagrant](https://www.vagrantup.com/) und [Ansible](https://www.ansible.com/).
 
-#### 3.2.2.1 Bereitstellung durch Vagrant
+## Bereitstellung durch Vagrant
 Vagrant läuft mit Version 2.3.4 auf dem lokalen Windows Rechner.
 Für die Bereitstellung der VM wird im Verzeichnis das Vagrantfile benötigt.
 Die VM kann dann wie folgt gestartet werden:
@@ -16,7 +16,7 @@ Bei der Provisioniert wird unter anderem folgendes definiert:
 - Netzwerkadapter mit MAC-Adresse und virtuellem Netzwerk
 Die restlichen Punkte können aus dem Vagrantfile selbst entnommen werden.
 
-#### 3.2.2.2 Konfiguration durch Ansible
+## Konfiguration durch Ansible
 
 | Version        | ansible core 2.13.3 |
 |----------------|---------------------------------------------------|
@@ -33,14 +33,14 @@ Außerdem sind folgende Inhalte zusätzlich in das Arbeitsverzeichnis von Ansibl
 Die vorkonfigurierte "ssh-config"-Datei im lnx-docker-Ordner wird für die SSH-Verbindung zum Host verwendet.
 In dieser wird unter anderem der zu verwendende Port und die Schlüssel für die Verbindung definiert.
 
-##### 3.2.2.2.1 Collection
+### Collection
 Die Collection-Liste kann mit 
 ```
 ansible-galaxy collection install name.connection
 ``` 
 erweitert werden. Der aktuelle Stand ist in dieser [Liste](https://github.com/gz-bad-erzland-p3/docs/files/10805292/ansible_collection.txt) einsehbar.
 
-##### 3.2.2.2.2 Playbooks
+### Playbooks
 Im Ordner .playbooks im Arbeitsverzeichnis sind alle relevanten Dateien zu finden.
 
 Die Konfigurationsdatei "ansible.cfg" bilden dabei den Grundstock für die Nutzung von Ansible.
