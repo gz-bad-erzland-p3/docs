@@ -54,9 +54,11 @@ Nach erfolgreicher Anmeldung/Reservierung wird der Interessent gebeten auf einen
 
 #### Zahlungsseite
 Auf der Zahlungsseite wird zum einen eine Übersicht über die aktuelle Auswahl angezeigt und es kann zwischen 3 Zahlungsmethoden ausgewählt werden.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/222351425-dcc75e8b-9a78-4b58-9a7d-3223ea64f6a3.png)
 
 Nach Auswahl der Zahlungsmethode wird die Meldung "Buchung erfolgreich!" angezeigt. Damit ist die Reservierung abgeschlossen und der Arbeitsplatz für den gewünschten Zeitraum gebucht.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/222351529-dce6f03d-e002-450a-9c71-19a224dc89af.png)
 
 ## Login
@@ -67,6 +69,7 @@ Der Login erfolgt über die Eingabe von E-Mail und Passwort.
 
 ### Registrierung
 Wenn noch kein Konto vorhanden ist, besteht die Möglichkeit sich zu registrieren.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/214049524-e6706c16-2728-41c2-8bfa-6ebdd5f9c855.png)
 
 Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels HTTP- bzw- REST-Request an die REST-API (Firebase) übermittelt. Nach Abschluss der Registrierung wird eine Bestätigungsmail gesendet.</p>
@@ -77,10 +80,12 @@ Zur Speicherung der Login-Daten in der Firebase-Datenbank werden diese mittels H
 ## Profilübersicht
 
 In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch möglich das Passwort zurückzusetzen, die Adresse zu ändern oder das Konto zu löschen.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/214782181-fedd5236-6d55-4dd7-87ed-2f74f864b8d7.png)
 
 ## Buchungsübersicht
 In der Profilübersicht werden die Buchungen angezeigt und es besteht die Möglichkeit die Buchungen zu stonieren.
+
 ![grafik](https://user-images.githubusercontent.com/72852065/214781607-3d67e685-4958-4602-b5ef-4288738b47c9.png)
 
 ## Dokumentation / Hilfe Seiten
