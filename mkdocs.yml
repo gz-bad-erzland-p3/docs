@@ -21,7 +21,6 @@ nav:
   - Anleitungen & Informationen:
     - anleitungen/index.md
   - Projektphasen:
-    - projektphasen.md
     - Projektdefinition:
       - Protokoll: projektdefinition/protokoll.md
       - Lastenheft: projektdefinition/lastenheft.md
