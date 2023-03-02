@@ -1,12 +1,12 @@
-# Entwicklung der Anwendung
+# Grundlegendes über die Entwicklung der Anwendung
 
-Hier geben wir einen Überblick über unsere verwendeten Entwicklungs-Technologien.
+Hier geben wir einen groben Überblick über die in der Anwendung verwendeten Entwicklungs-Technologien. 
 
 !!! info "Projektcode"
 
    Der gesamte Projektcode steht Open-Source auf \[GitHub\](https://github.com/gz-bad-erzland-p3/projektarbeit) zur Verfügung
 
-## Technologien
+## Technologien und Werkzeuge
 
 ### React
 
@@ -38,7 +38,7 @@ React ist eine JavaScript-Programmbibliothek zur Erstellung von webbasierten Ben
 *   BBC
 *   NEU! Arbeitsplatzvermietung vom GZ Bad Erzland
 
-### NextJS 
+### NextJS-Framework
 
 **Was ist NextJS?**
 
@@ -64,7 +64,17 @@ NextJS, erstellt von Vercel, ist ein Open-Source-JavaScript-Framework, mit dem E
 *   Tripadviser
 *   OpenAI
 
-### GitHub
+### Programmiersprache - TypeScipt
+
+**Was ist TypeScript?**
+
+s
+
+**Warum verwenden wir GitHub?**
+
+*   s
+
+### Versionsverwaltung - GitHub
 
 **Was ist GitHub?**
 
@@ -76,6 +86,10 @@ GitHub ist ein Cloud-Dienst zur Versionsverwaltung für Software-Entwicklungspro
 *   Ausfallsicher
 *   Einfache Verknüpfung mit Build- und Deployment-Tools, wie z.B. Vercel
 *   Ermöglicht eine unkomplizierte Zusammenarbeit bei der Entwicklung
+
+### Entwicklungsumgebung - Visual Studio Code
+
+**Warum verwenden wir Visual Studio Code?**
 
 ## **Coding-Richtlinien**
 
