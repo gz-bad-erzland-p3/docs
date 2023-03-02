@@ -32,12 +32,13 @@ Das Backend der Projektarbeit umfasst die Datenverarbeitung und -speicherung im 
 
 ## Google Firebase
 
-Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt ein Software-Development-Kit (SDK) und die benötigte Infrastruktur zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
+Google Firebase ist eine von Google entwickelte Plattform für die Entwicklung und den sicheren Betrieb mobiler Webanwendungen. Die Plattform stellt sowohl die benötigte Infrastruktur als auch die benötigte JavaScript Schnittstelle in Form eines Software-Development-Kits (SDK) und zur Verfügung. Dies ermöglicht es, einfach und effizient Funktionalitäten auf verschiedenen Plattformen bereitzustellen.
 
 Besonderheiten der Firebase-Plattform ggü. vergleichbaren Plattformen:
 
 *   Datenzugriff und -speicherung erfoglt mithilfe von Methoden aus dem SDK direkt vom clientseitigen Code
 *   Es wird kein Server benötigt, der API-Abfragen weiterverarbeitet
+*   Einfache Verknüpfung zwischen Benutzern, Datenbank und anderen Firebase-Produkten möglich
 
 ### Kostenplan
 
@@ -138,6 +139,20 @@ Grundlegende Funktionsweise ist wie folgt: Ein Authentifizierungstoken wird nach
 
 ![](https://user-images.githubusercontent.com/71382635/222359448-2be7c25c-0b0b-44db-9fda-687c27aeff49.png)
 
+## Adresssuche und -Validierung
+
+Die Adresssuche im Registrierungsprozess wird mithilfe der Google-Maps-Api umgesetzt.
+
+![](https://user-images.githubusercontent.com/71382635/222581691-eeda03ef-6d2c-4f4e-a4e3-d6daa8aaf2ab.png)
+
+### **Kostenmodelle**
+
+Siehe [https://firebase.google.com/pricing](https://firebase.google.com/pricing)
+
+Im "No-cost Plan" sind u.a. folgende Spezifikationen verfügbar:
+
+*   todo
+
 ## Beispiel-Implementierungen
 
 ### Abrufen der Firebase-DB und -AUTH Instanz
@@ -220,3 +235,7 @@ async function sendBooking(db, bookingId, data) {
 ```
 
 Nach erfolgreicher Speicherung in der Echtzeit-Datenbank sind die Buchungsdaten in der Firebase-Console sichtbar.
+
+### Autocomplete-Adresssuche
+
+todo
