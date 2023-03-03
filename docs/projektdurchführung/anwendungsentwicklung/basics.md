@@ -22,7 +22,9 @@ Insgesamt bieten Webanwendungen viele Vorteile gegenüber Desktop-Anwendungen un
 
 ## Technologien und Werkzeuge
 
-Für eine reibungslose Zusammenarbeit im Team, zur Reduzierung der Entwicklungszeit, zur Fehlerminimierung und zur Minimierung der Ladezeiten verwenden wir folgende Entwicklungstechnologien:
+Für eine reibungslose Zusammenarbeit im Team, zur Reduzierung der Entwicklungszeit, zur Fehlerminimierung und zur Minimierung der Ladezeiten verwenden wir moderne und standardisierte Entwicklungstechnologien.
+
+Diese sollen in folgendem Abschnitt erklärt und deren Verwendung begründet werden.
 
 ### Programmiersprache - TypeScipt
 
