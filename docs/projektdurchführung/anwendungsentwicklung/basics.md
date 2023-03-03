@@ -4,7 +4,21 @@ Im folgenden Abschnitt geben wir einen groben Überblick über die, in der Anwen
 
 ## Warum eine Web-Anwendung?
 
-Eine 
+Es gibt mehrere Vorteile einer Webanwendung gegenüber einer Desktop-Anwendung, darunter:
+
+**Plattformunabhängigkeit**: Eine Webanwendung läuft auf jedem Gerät mit einem Webbrowser, unabhängig davon, ob es sich um einen Desktop-Computer, ein Mobiltelefon oder ein Tablet handelt. Im Gegensatz dazu müssen Desktop-Anwendungen für jede Plattform separat entwickelt werden, was Zeit und Ressourcen erfordert.
+
+**Einfache Wartung**: Da Webanwendungen zentral auf einem Server ausgeführt werden, ist es einfacher, Updates und Änderungen durchzuführen. Benutzer müssen die Anwendung nicht jedes Mal aktualisieren, wenn eine Änderung vorgenommen wird.
+
+**Einfacher Zugriff**: Webanwendungen sind überall zugänglich, solange eine Internetverbindung verfügbar ist. Im Gegensatz dazu müssen Desktop-Anwendungen auf jedem Gerät installiert werden, auf dem sie verwendet werden sollen.
+
+**Kosteneffizienz**: Die Entwicklung einer Webanwendung ist oft kosteneffizienter als die Entwicklung einer Desktop-Anwendung. Es müssen keine teuren Lizenzen oder spezielle Hardwareanforderungen erfüllt werden, um die Anwendung auszuführen.
+
+**Zusammenarbeit**: Webanwendungen ermöglichen es Benutzern, gemeinsam an Dokumenten oder Projekten zu arbeiten, unabhängig davon, wo sie sich befinden. Die Zusammenarbeit kann in Echtzeit erfolgen und Änderungen können sofort aktualisiert werden.
+
+**Skalierbarkeit**: Webanwendungen können problemlos auf eine große Anzahl von Benutzern skaliert werden, ohne dass eine zusätzliche Hardware erforderlich ist. Im Gegensatz dazu können Desktop-Anwendungen aufgrund von Hardwarebeschränkungen nur eine begrenzte Anzahl von Benutzern unterstützen.
+
+Insgesamt bieten Webanwendungen viele Vorteile gegenüber Desktop-Anwendungen und haben sich in den letzten Jahren zu einem bevorzugten Ansatz für die Bereitstellung von Software entwickelt.
 
 ## Technologien und Werkzeuge
 
