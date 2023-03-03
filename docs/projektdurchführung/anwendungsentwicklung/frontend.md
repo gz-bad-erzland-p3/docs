@@ -106,10 +106,5 @@ In der Profilübersicht werden die Daten des Kontos angezeigt. Hier ist es auch 
 
 ![grafik](https://user-images.githubusercontent.com/72852065/214782181-fedd5236-6d55-4dd7-87ed-2f74f864b8d7.png)
 
-## Buchungsübersicht
-In der Profilübersicht werden die Buchungen angezeigt und es besteht die Möglichkeit die Buchungen zu stonieren.
-
-![grafik](https://user-images.githubusercontent.com/72852065/214781607-3d67e685-4958-4602-b5ef-4288738b47c9.png)
-
 ## Dokumentation / Hilfe Seiten
 * Für die Hilfe im Online-Reservierungs-Tool wird auf die Projektdokumentation verwiesen.
