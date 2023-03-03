@@ -32,9 +32,10 @@ TypeScript ist eine von Microsoft entwickelte Skriptsprache, welche JavaScript u
 
 **Warum verwenden wir TypeScript anstatt JavaScript?**
 
-*   Objektorientiert (Klassen, Interfaces, Vererbung, Module, anonyme Funktionen, Generics usw.)
-*   Starke Typisierung möglich (so können Laufzeitfehler reduziert werden)
-*   Bessere Strukturierung vom Quellcode möglich
+*   TypeScript ist im Gegensatz zu JavaScript eine objektorientierte Sprache
+*   Verbesserte Kompatibilität und Interoperabilität mit anderen Codebibliotheken und Frameworks
+*   Bessere IDE-Unterstützung
+*   Bessere Lesbarkeit und Wartbarkeit durch statische Typisierung und verbesserte Fehlererkennung
 
 ### Versionsverwaltung - GitHub
 
@@ -45,7 +46,7 @@ GitHub ist ein Cloud-Dienst zur Versionsverwaltung für Software-Entwicklungspro
 **Warum verwenden wir GitHub?**
 
 *   Kostenlos
-*   Ausfallsicher
+*   Sehr ausfallsicher
 *   Einfache Verknüpfung mit Build- und Deployment-Tools, wie z.B. Vercel
 *   Ermöglicht eine unkomplizierte Zusammenarbeit bei der Entwicklung
 
@@ -70,7 +71,7 @@ React ist eine JavaScript-Programmbibliothek zur Erstellung von webbasierten Ben
 **Warum verwenden wir React?**
 
 *   Gute Vorkenntnisse bei einigen Entwicklern unseres Teams
-*   Einfacher Einstieg für unerfahrene Entwickler unseres Teams
+*   Einfacher Einstieg für unerfahrene Entwickler
 *   Einfaches und intuitives Coding durch wiederverwendbare Komponenten, unkompliziertes Debugging und eine einfache Wartung
 *   schnelle Ladezeiten durch einen Virtual DOM (Virtual DOM vergleicht die vorherigen Zustände der Komponenten und aktualisiert nur die geänderten Elemente im Real DOM)
 *   Große Community rund um React (stellt viele kostenlose Online-Hilfen und Tutorials sowie fertige Open-Source-Implementierungen benötigter Funktionalitäten zur Verfügung)
