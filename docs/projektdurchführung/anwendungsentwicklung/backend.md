@@ -236,4 +236,15 @@ Nach erfolgreicher Speicherung in der Echtzeit-Datenbank sind die Buchungsdaten 
 
 ### Autocomplete-Adresssuche
 
-todo
+Mithilfe des Paketes `"react-google-autocomplete"` kann mithilfe weniger Codezeilen ein Adress-Suchfeld implementiert werden, welches dem Benutzer Autocomplete-Vorschläge zur aktuellen Eingabe liefert. Bei Auswahl eines Ortes, können dessen Eigenschaften in der Funktion, die bei der Property `onPlaceSelected` hinterlegt wurde, ausgewertet werden:
+
+```typescript
+import Autocomplete from "react-google-autocomplete";
+
+<Autocomplete
+  apiKey={YOUR_GOOGLE_MAPS_API_KEY}
+  onPlaceSelected={(place) => {
+    console.log(place);
+  }}
+/>;
+```
