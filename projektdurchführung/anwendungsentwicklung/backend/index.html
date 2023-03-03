@@ -825,6 +825,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#aufgetretene-probleme-und-schwierigkeiten" class="md-nav__link">
+    Aufgetretene Probleme und Schwierigkeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#beispiel-implementierungen" class="md-nav__link">
     Beispiel-Implementierungen
   </a>
@@ -1299,6 +1306,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#aufgetretene-probleme-und-schwierigkeiten" class="md-nav__link">
+    Aufgetretene Probleme und Schwierigkeiten
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#beispiel-implementierungen" class="md-nav__link">
     Beispiel-Implementierungen
   </a>
@@ -1460,6 +1474,19 @@
 <p><img alt="" src="https://user-images.githubusercontent.com/71382635/222581691-eeda03ef-6d2c-4f4e-a4e3-d6daa8aaf2ab.png" /></p>
 <h3 id="kostenmodelle"><strong>Kostenmodelle</strong><a class="headerlink" href="#kostenmodelle" title="Permanent link">&para;</a></h3>
 <p>Die Google-Places-API rechnet die jeweiligen Dienste in einem Pay-As-You-Go Modell ab. Planen und berechnen lässt sich dies mit dem <a href="https://developers.google.com/maps/documentation/places/web-service/usage-and-billing?hl=de">Preisrechner von Google.</a> Für kleinere Anwendungen stellt Google ein Plattform-Guthaben in Höhe von 200 $ pro Monat kostenlos zur Verfügung. Dies entspricht in unserer Anwendung ca. 12.000 Adresssuchen pro Monat.</p>
+<h2 id="aufgetretene-probleme-und-schwierigkeiten">Aufgetretene Probleme und Schwierigkeiten<a class="headerlink" href="#aufgetretene-probleme-und-schwierigkeiten" title="Permanent link">&para;</a></h2>
+<p>Bei folgenden Entwicklungsschritten sind Schwierigkeiten aufgetreten, die gelöst werden konnten:</p>
+<ul>
+<li>Konfiguration der Firebase-Sicherheitsregeln (vorerst geringer Kenntnisstand im Team)</li>
+<li>Speicherung und auslesen von Daten</li>
+<li>Methode, die berechnet wie viele Arbeitsplätze zu einem bestimmten Zeitraum verfügbar sind</li>
+<li>Validierung von Adressen (Unterbinden manueller Eingaben und Hausnummer ist Pflicht)</li>
+<li>Validierung vom Geburtstag (18-99 Jahre)</li>
+</ul>
+<p>Folgende Probleme konnten in der vorgegebenen Zeit nicht gelöst werden:</p>
+<ul>
+<li>Speicherung der Adresse erfolgt immer noch als Formatierter String. Dies kann in Zukunft auch durch die <a href="https://developers.google.com/maps/documentation/places/web-service/place-id?hl=de">Google-Place-ID</a> abgelöst werden.</li>
+</ul>
 <h2 id="beispiel-implementierungen">Beispiel-Implementierungen<a class="headerlink" href="#beispiel-implementierungen" title="Permanent link">&para;</a></h2>
 <h3 id="abrufen-der-firebase-db-und-auth-instanz">Abrufen der Firebase-DB und -AUTH Instanz<a class="headerlink" href="#abrufen-der-firebase-db-und-auth-instanz" title="Permanent link">&para;</a></h3>
 <p>Importieren der benötigten Pakete des Firebase-SDK</p>
