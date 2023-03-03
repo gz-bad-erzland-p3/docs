@@ -56,13 +56,11 @@ Im "No-cost Plan" sind u.a. folgende Spezifikationen verfügbar:
 *   bis zu 10 GB Datentransfer (Upload und Download) pro Monat **≈** 10 Millionen Buchungen pro Monat bei unserer Anwendung
 *   (bis zu 5 GB Cloud-Storage Speicher)
 
-### Verbindungsaufbau
+### Verbindungsaufbau und Kommunikation
 
-TODO
+Die Verbindung zu den Backendsystemen von Google erfolgt über eine API-Key-Technologie. Genaueres über das Verfahren findet sich in der [Goolge Hilfe](https://firebase.google.com/docs/projects/api-keys?hl=de).
 
-### Kommunikation
-
-Die Kommunikation erfolgt im Gegensatz zu klassischen Web-Anwendungen direkt mit dem ... TODO
+Die Kommunikation erfolgt im Gegensatz zu klassischen Web-Anwendungen direkt mit dem Backendsystemen von Google. Es wird kein Server mit REST-Schnitstelle, zum Verarbeiten der Anfragen an die Datenbank, benötigt. Das SDK bietet Methoden, zum sicheren Umgang mit der Datenbank (z.B. set(), get() und onValue()) sowie Methoden zum Registrieren und Anmelden von Benutzern in der Benutzerverwaltung (z.B. createUserWithEmailAndPassword() und signInWithEmailAndPassword()).
 
 ![](https://user-images.githubusercontent.com/71382635/222440948-0914bf7c-e815-4d50-954f-8e1eea0458d5.png)
 
