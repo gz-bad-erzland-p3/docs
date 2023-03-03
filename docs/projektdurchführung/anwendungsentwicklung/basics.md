@@ -2,17 +2,25 @@
 
 Im folgenden Abschnitt geben wir einen groben Überblick über die, in der Anwendung verwendeten, Entwicklungs-Technologien. 
 
+## Warum eine Web-Anwendung?
+
+Eine 
+
 ## Technologien und Werkzeuge
+
+Für eine reibungslose Zusammenarbeit im Team, zur Reduzierung der Entwicklungszeit, zur Fehlerminimierung und zur Minimierung der Ladezeiten verwenden wir folgende Entwicklungstechnologien:
 
 ### Programmiersprache - TypeScipt
 
 **Was ist TypeScript?**
 
-s
+TypeScript ist eine von Microsoft entwickelte Skriptsprache, welche JavaScript um einige Funktionalitäten zu einer Objektorientierten Sprache erweitert.
 
-**Warum verwenden wir GitHub?**
+**Warum verwenden wir TypeScript anstatt JavaScript?**
 
-*   s
+*   Objektorientiert (Klassen, Interfaces, Vererbung, Module, anonyme Funktionen, Generics usw.)
+*   Starke Typisierung möglich (so können Laufzeitfehler reduziert werden)
+*   Bessere Strukturierung vom Quellcode möglich
 
 ### Versionsverwaltung - GitHub
 
@@ -30,6 +38,14 @@ GitHub ist ein Cloud-Dienst zur Versionsverwaltung für Software-Entwicklungspro
 ### Entwicklungsumgebung - Visual Studio Code
 
 **Warum verwenden wir Visual Studio Code?**
+
+*   Auf allen Plattformen verfügbar (WIN, MAC, LINUX)
+*   Nützliche Debugging-Tools
+*   Gute Vorkenntnisse aller Entwickler
+*   Optimiert für die JavaScript/TypeScript-Entwicklung
+*   Optimiert für die Verwendung von GitHub
+*   Einfache Einarbeitung möglich
+*   Geringer Installationsaufwand bei neuen Entwicklern
 
 ### React
 
