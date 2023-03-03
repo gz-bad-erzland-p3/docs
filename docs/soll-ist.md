@@ -11,7 +11,7 @@
 * Online-Hilfe
 * Buchungsbestätigung
 
-# IST
+# IST-Zustand
 - [x] Online-Reservierung 24/7 möglich
 - [x] Terminauswahl mit entsprechender Begrenzung (mind. 2h; max 1 Jahr)
 - [ ] Belegten Zeitraum im Kalender anzeigen
