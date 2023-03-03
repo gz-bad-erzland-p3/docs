@@ -147,6 +147,20 @@ Die Adresssuche im Registrierungsprozess wird mithilfe der Google-Maps-Api umges
 
 Die Google-Places-API rechnet die jeweiligen Dienste in einem Pay-As-You-Go Modell ab. Planen und berechnen lässt sich dies mit dem [Preisrechner von Google.](https://developers.google.com/maps/documentation/places/web-service/usage-and-billing?hl=de) Für kleinere Anwendungen stellt Google ein Plattform-Guthaben in Höhe von 200 $ pro Monat kostenlos zur Verfügung. Dies entspricht in unserer Anwendung ca. 12.000 Adresssuchen pro Monat.
 
+## Aufgetretene Probleme und Schwierigkeiten
+
+Bei folgenden Entwicklungsschritten sind Schwierigkeiten aufgetreten, die gelöst werden konnten:
+
+*   Konfiguration der Firebase-Sicherheitsregeln (vorerst geringer Kenntnisstand im Team)
+*   Speicherung und auslesen von Daten
+*   Methode, die berechnet wie viele Arbeitsplätze zu einem bestimmten Zeitraum verfügbar sind
+*   Validierung von Adressen (Unterbinden manueller Eingaben und Hausnummer ist Pflicht)
+*   Validierung vom Geburtstag (18-99 Jahre)
+
+Folgende Probleme konnten in der vorgegebenen Zeit nicht gelöst werden:
+
+*   Speicherung der Adresse erfolgt immer noch als Formatierter String. Dies kann in Zukunft auch durch die [Google-Place-ID](https://developers.google.com/maps/documentation/places/web-service/place-id?hl=de) abgelöst werden.
+
 ## Beispiel-Implementierungen
 
 ### Abrufen der Firebase-DB und -AUTH Instanz
